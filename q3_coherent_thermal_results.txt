@@ -1,0 +1,31 @@
+self-test: PASS
+
+A = 30 sites, j0 at center; S_vac(A) = 2.5616
+       dE |   Srel_coh    dS_coh | Srel_noise  dS_noise | Srel_gibbs  dS_gibbs | noise/coh
+ 1.00e-04 |  1.152e-03  0.00e+00 | -6.960e-04  1.85e-03 | -4.844e-03  9.75e-03 |    -0.604
+ 1.78e-04 |  2.048e-03  0.00e+00 | -1.095e-03  3.14e-03 | -8.480e-03  1.71e-02 |    -0.534
+ 3.16e-04 |  3.642e-03  0.00e+00 | -1.679e-03  5.32e-03 | -1.469e-02  2.99e-02 |    -0.461
+ 5.62e-04 |  6.477e-03  0.00e+00 | -2.494e-03  8.97e-03 | -2.505e-02  5.17e-02 |    -0.385
+ 1.00e-03 |  1.152e-02  0.00e+00 | -3.535e-03  1.51e-02 | -4.170e-02  8.79e-02 |    -0.307
+ 1.78e-03 |  2.048e-02  0.00e+00 | -4.646e-03  2.51e-02 | -6.712e-02  1.46e-01 |    -0.227
+ 3.16e-03 |  3.642e-02  0.00e+00 | -5.277e-03  4.17e-02 | -1.034e-01  2.36e-01 |    -0.145
+ 5.62e-03 |  6.477e-02  0.00e+00 | -3.963e-03  6.87e-02 | -1.506e-01  3.71e-01 |    -0.061
+ 1.00e-02 |  1.152e-01  0.00e+00 |  2.806e-03  1.12e-01 | -2.055e-01  5.64e-01 |     0.024
+ 1.78e-02 |  2.048e-01  0.00e+00 |  2.291e-02  1.82e-01 | -2.583e-01  8.32e-01 |     0.112
+ 3.16e-02 |  3.642e-01  0.00e+00 |  7.332e-02  2.91e-01 | -2.901e-01  1.20e+00 |     0.201
+ 5.62e-02 |  6.477e-01  0.00e+00 |  1.896e-01  4.58e-01 | -2.657e-01  1.69e+00 |     0.293
+ 1.00e-01 |  1.152e+00  0.00e+00 |  4.444e-01  7.07e-01 | -1.216e-01  2.35e+00 |     0.386
+
+slopes vs dE: S_rel coherent 1.000, local noise 2.127
+matched-energy ratio S_rel(noise)/S_rel(coherent) at smallest dE: -0.604
+
+Verdicts (round-3 corrected reading):
+  [A] coherent dS_ent = 0 exactly (spectrum-preserving):        TRUE
+  [B] S_rel(coherent) ~ dE^1 (energy-linear; amplitude-quadratic): TRUE (slope 1.000)
+  [C] S_rel(noise) ~ dE^2 (first-law cancellation at first order): TRUE (slope 2.127, small-dE points below numerical floor)
+  [D] round-2 claim 'coherent quadratically suppressed at matched dE': REFUTED — hierarchy is reversed (coherent linear, noise quadratic);
+      the robust discriminator is WHICH leg moves: dS_ent stays 0 under
+      coherent drive, moves linearly under noise of equal energy.
+  NOTE: absolute S_rel of a point displacement is UV-sensitive on the
+  lattice (regulator-dependent magnitude); slopes and the dS_ent
+  dichotomy are regulator-robust.
