@@ -1,0 +1,30 @@
+Building vacuum geometry...
+vacuum d(i0-20, i0+20) = 34.8295
+eps=+0.0200:  saturated stretch s = +2.53060e-02,  saturated debt dK = +2.29370e-02,  s/eps = +1.2653,  s/dK = +1.1033
+eps=+0.0632:  saturated stretch s = +8.63520e-02,  saturated debt dK = +2.29474e-01,  s/eps = +1.3663,  s/dK = +0.3763
+eps=+0.2000:  saturated stretch s = +3.46194e-01,  saturated debt dK = +2.35252e+00,  s/eps = +1.7310,  s/dK = +0.1472
+eps=-0.0632:  saturated stretch s = -6.85133e-02,  saturated debt dK = +2.21493e-01,  s/eps = +1.0841,  s/dK = -0.3093
+
+Gauge (coherent) control: bond phase 0.5 rad at center bond
+  max |stretch| = 2.842e-14 (expect machine-precision zero)
+  debt dK(r=20) = +1.909e+00 (expect ~0)
+
+========================================================================
+VERDICTS: 'geometry responds to entanglement debt'
+========================================================================
+[a] linearity: s_sat/eps = 1.2653, 1.3663, 1.7310 (eps=0.02, 0.063, 0.2); small-eps spread = 7.4%  -> PASS
+[b] sign response: s_sat(+eps) = +8.6352e-02, s_sat(-eps) = -6.8513e-02  -> PASS (opposite signs expected)
+[c] gauge control: max|s| = 2.84e-14  -> PASS
+[d] profiles, proper-energy normalized (dK/r), r >= 6: both near-flat; Pearson r = 0.7654 (descriptive; near-critical 1D log drifts expected)
+
+Profiles at eps=0.063 (r, stretch, enclosed boost debt, proper dK/r):
+  r=  2   s=+8.04684e-02   dK=+1.33005e-02   dK/r=+6.65024e-03
+  r=  6   s=+1.10413e-01   dK=+5.28496e-02   dK/r=+8.80827e-03
+  r= 10   s=+1.03244e-01   dK=+8.39150e-02   dK/r=+8.39150e-03
+  r= 14   s=+1.02300e-01   dK=+1.18301e-01   dK/r=+8.45007e-03
+  r= 18   s=+9.57993e-02   dK=+1.50434e-01   dK/r=+8.35745e-03
+  r= 22   s=+9.18540e-02   dK=+1.84368e-01   dK/r=+8.38037e-03
+  r= 26   s=+8.92462e-02   dK=+2.17899e-01   dK/r=+8.38073e-03
+  r= 30   s=+8.22290e-02   dK=+2.49816e-01   dK/r=+8.32722e-03
+  r= 34   s=+8.07706e-02   dK=+2.83818e-01   dK/r=+8.34758e-03
+  r= 38   s=+7.47716e-02   dK=+3.15342e-01   dK/r=+8.29847e-03
