@@ -1,0 +1,27 @@
+@page { size: A4; margin: 22mm 20mm; }
+body {
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  font-size: 11pt; line-height: 1.55; color: #1a1f24;
+  max-width: none; margin: 0;
+}
+.titlepage { text-align: center; padding: 12mm 0 8mm; page-break-after: always; }
+.titlepage h1 { font-size: 26pt; margin: 30mm 0 6mm; line-height: 1.2; }
+.titlepage p, .titlepage strong { font-size: 12pt; }
+.titlepage .prov {
+  margin-top: 28mm; font-size: 9.5pt; color: #4a545e; text-align: left;
+  border: 0.5pt solid #b9c2cb; padding: 5mm 6mm; border-radius: 2mm;
+}
+h1 { font-size: 17pt; margin: 18pt 0 8pt; page-break-after: avoid; }
+h2 { font-size: 14pt; margin: 16pt 0 6pt; page-break-after: avoid; }
+h3 { font-size: 12pt; margin: 12pt 0 4pt; page-break-after: avoid; }
+p, li { orphans: 3; widows: 3; }
+img { max-width: 100%; display: block; margin: 10pt auto; page-break-inside: avoid; }
+table { border-collapse: collapse; font-size: 9pt; width: 100%; margin: 8pt 0;
+        font-family: system-ui, sans-serif; page-break-inside: avoid; }
+th, td { border: 0.5pt solid #b9c2cb; padding: 3pt 5pt; text-align: left; vertical-align: top; }
+th { background: #eef1f4; }
+code { font-family: Menlo, Consolas, monospace; font-size: 9.2pt; background: #f0f2f5; padding: 0 2pt; }
+pre { background: #f0f2f5; padding: 6pt; font-size: 8.8pt; overflow-x: hidden; white-space: pre-wrap; }
+blockquote { border-left: 2pt solid #b9c2cb; margin-left: 0; padding-left: 8pt; color: #4a545e; }
+hr { border: none; border-top: 0.5pt solid #b9c2cb; margin: 14pt 0; }
+a { color: #0B5E80; text-decoration: none; }

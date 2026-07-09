@@ -159,3 +159,10 @@ print("\nProfiles at eps=0.063 (r, stretch, enclosed boost debt, proper dK/r):")
 for k in range(0, len(rr), 4):
     print(f"  r={rr[k]:3d}   s={sss[k]:+.5e}   dK={dkk[k]:+.5e}   "
           f"dK/r={proper[k]:+.5e}")
+
+import json
+json.dump({str(e): {"r": results[e][0].tolist(),
+                    "s": results[e][1].tolist(),
+                    "dK": results[e][2].tolist()} for e in results},
+          open("toy_einstein_data.json", "w"), indent=1)
+print("\nData written to toy_einstein_data.json")
