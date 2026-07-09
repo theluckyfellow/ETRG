@@ -1,0 +1,52 @@
+# ETRG-0: The Q10 Note — Two Partitions, One Generator
+
+**Claim: causal confinement plus operational consistency *selects* the factorization, and at a horizon every admissible coarse-graining inherits the boost generator. Q10 is answerable, and the answer also blunts Q3.**
+*Version 0.1 — July 2026. Authored by Claude (Fable 5, Anthropic) as an equal-contributor pass; submitted for the same adversarial review as everything else in this program.*
+
+## The problem (from round 1)
+
+Checkpoint Q10 (GLM's find): the temporal sector's operational partition — Barontini's coarse-grained observed/unobserved split, which supplies entropic time — and the spatial sector's partition — region/complement across a surface, which supplies the entanglement first law — are *different tensor factorizations* with, in general, different modular generators. The lock note's L5 needs them to define the same modular structure at causal horizons. Bisognano–Wichmann makes that plausible; nothing proves it. Separately, Q3 (Albrecht–Iglesias clock ambiguity) asks what forbids re-partitioning the universe to game entropic time.
+
+This note argues both questions have the same answer, and that it is a theorem-shaped answer, not a plausibility.
+
+## N-claims
+
+**N1 (Observers at horizons are subalgebras of the wedge).** An observer confined to the exterior of a causal horizon can operate only on the wedge algebra A(W): causality is not a modeling choice but a physical restriction on which operations exist for them. Any coarse-graining such an observer implements — finite resolution, mode binning, restricted instrument set — is a subalgebra N ⊆ A(W) together with an assignment of reduced statistics. The "bright/dark" split of a Barontini-class construction, transplanted to a horizon, is therefore not an arbitrary tensor factorization of the global Hilbert space; it is constrained to live inside the geometric partition from the start. *Status: physical framing; the content is that Q3's "arbitrary re-partition" is not available to any causally situated observer.*
+
+**N2 (Operational consistency forces modular covariance — Takesaki).** For the observer's coarse-grained bookkeeping to be *self-consistent* — meaning there exists a conditional expectation E: A(W) → N that preserves the state ω (so that expectation values of coarse observables can be computed within the coarse description without knowing which fine details were discarded, and repeated coarse measurements don't systematically drift from the fine statistics) — Takesaki's theorem (J. Funct. Anal. 9, 306 (1972)) applies: **a normal state-preserving conditional expectation onto N exists if and only if N is invariant under the modular flow σ_t^ω of (A(W), ω).** Moreover, when E exists, the modular flow of the restricted state on N *is* the restriction of the modular flow of A(W): σ_t^{ω|N} = σ_t^ω|_N. For the vacuum on a Rindler wedge, σ_t^ω is the boost (Bisognano–Wichmann). Therefore every operationally consistent coarse-graining at a horizon has, as the modular generator of its own reduced state, *the restriction of the same boost generator K̂*. One generator, by theorem — not by the assumption round 1 correctly flagged. *Status: the mathematical theorem is established; what is new here is its use as the selection principle answering Q10. The operational reading of "conditional expectation exists" is the weakest joint — attack it (see requested attacks).*
+
+**N3 (First-order lemma: the coarse first law equals the fine first law for modular-covariant coarse-grainings).** Let ρ = e^{−K}/Z be the reduced vacuum on a region, and ρ(ε) = ρ + ε δρ a perturbed family. The fine first law is dS/dε|₀ = Tr(δρ K) = d⟨K⟩/dε|₀ (E7). Now let D be dephasing in the eigenbasis of K (or in binned modular-energy shells): D[X] = Σₛ Pₛ X Pₛ with [Pₛ, ρ] = 0. Define the coarse entropy S_cg(ε) = S(D[ρ(ε)]). Then:
+
+$$\frac{dS_{cg}}{d\varepsilon}\Big|_0 = -\mathrm{Tr}\big(D[\delta\rho]\ln\rho\big) = -\mathrm{Tr}\big(\delta\rho\, D[\ln\rho]\big) = -\mathrm{Tr}(\delta\rho \ln \rho) = \frac{d\langle K\rangle}{d\varepsilon}\Big|_0 ,$$
+
+using D[ρ] = ρ, self-adjointness of D, and [ln ρ, Pₛ] = 0. **The coarse-grained entropy obeys the same first law, with the same modular Hamiltonian and the same calibration, to first order.** For a coarse-graining basis B that does not commute with K, D_B[ρ] ≠ ρ and dS_cg/dε = −Tr(δρ D_B[ln D_B[ρ]]) ≠ d⟨K⟩/dε generically: the lock breaks. So the lock between the temporal face (coarse entropy bookkeeping) and the spatial face (fine first law) holds *precisely for* the coarse-grainings N2 says an admissible observer must use. Binning into shells of finite width ΔK adds corrections controlled by ΔK; they vanish as the resolution refines. *Status: elementary proof, stated here for the record; lattice verification requested (prediction below).*
+
+**N4 (The two faces are one bookkeeping — closing the circle with Clausius).** Under N2+N3, an admissible horizon observer's entropic-time increments track coarse entropy exchange, dτ ∝ |dS_cg|; N3 says dS_cg = d⟨K̂⟩ — modular energy flux; and modular energy flux through a horizon at Unruh temperature is exactly the Clausius input δQ = T δS of the spatial sector's derivation (Jacobson). The temporal face's clock and the spatial face's source are not two quantities that happen to agree; they are *one ledger read twice*. This is the precise content S1 ("one currency") was reaching for, now with the mechanism named: modular covariance of admissible coarse-grainings. *Status: interpretation built on N2+N3.*
+
+**N5 (What this does to Q3).** The clock-ambiguity objection assumed all tensor factorizations are equally available. N1 removes the non-causal ones for any situated observer; N2 removes the causally available but operationally inconsistent ones (no state-preserving conditional expectation → the observer's coarse records cannot be maintained without systematic drift, i.e. that partition does not support a functioning clock at all — a resonance with A3, clocks cost consistency, not just entropy). What survives is a class of admissible partitions all sharing one modular generator at the horizon. Predictions are therefore partition-independent *within the admissible class* — which is the strongest form of factorization-independence this program can claim, and, we submit, the right form: Q3's "gameable time" partitions are exactly the ones in which no observer can keep books. *Status: argument; whether the admissible class is nonempty-and-natural beyond horizons is Q2/Q7's territory and stays open.*
+
+## Lattice prediction (testable now, free fermions)
+
+On a free-fermion chain in its ground state with interval A, modular modes from diagonalizing the interval correlation matrix C_A = U diag(n_k) U†, and a weak global perturbation of strength ε:
+
+1. **Fine:** dS_A/dε = d⟨K_A⟩/dε (already verified in Demo 3 / round 1).
+2. **Coarse-modular:** define ñ_k(ε) = [U†C_A(ε)U]_{kk} (dephasing in the modular mode basis) and S_mod(ε) = Σₖ h(ñₖ) with h the binary entropy. Prediction: dS_mod/dε = dS_A/dε exactly at first order (equal slopes over ≥2 decades of ε; deviation slope 2, i.e. O(ε²)).
+3. **Coarse-site (control):** S_site(ε) = Σᵢ h([C_A(ε)]_{ii}) (dephasing in the site basis, which does not commute with K_A). Prediction: dS_site/dε ≠ dS_A/dε by an O(1) ratio, not converging with ε.
+
+A pass on (2) with a fail on (3) is the lattice avatar of N2/N3: the lock survives coarse-graining if and only if the coarse-graining is modular-covariant.
+
+## Requested attacks
+
+1. **N2's operational premise.** "Consistent bookkeeping ⇒ state-preserving conditional expectation exists" is the weakest joint. Construct an observer whose coarse-graining is physically reasonable (implementable, repeatable, drift-free in the quantities they track) yet admits no state-preserving conditional expectation — that would break the selection principle. Note the premise requires preservation of the *actual* state ω, not all states; argue whether that is the right operational demand or too strong/too weak.
+2. **Type III honesty.** Wedge algebras are type III₁: no density matrices, no P_s projectors onto "eigenspaces of K". N3's proof is type I (lattice-regularized). Does the N2 selection argument survive in the continuum (Takesaki's theorem itself is fine in type III; the dephasing lemma needs restating via relative entropy or Connes cocycles)?
+3. **Barontini fidelity.** Is the actual Birmingham bright/dark split (mode-space, not region-space) modular-covariant for the state they prepare? If it is not even approximately so, N2 predicts their entropic time should *drift* from any modular/thermal time — is that drift visible in their data, and does its absence/presence test this note?
+4. **Beyond horizons.** N2 hands us the generator only where modular flow is geometric. State the sharpest version of what remains unlocked for generic regions (this is Q7's territory; be precise about what N2 does *not* buy).
+5. **σ corollary (optional).** Modular flow is dimensionless (KMS at inverse "temperature" 2π); physical proper time enters via ħ and the local temperature. Does N2+N4 fix the packet's calibration constant σ = σ(ħ, k_B, T) up to a pure number? If yes, A2 becomes parameter-free; derive or refute.
+
+## Relation to existing claims
+
+Strengthens: L5 (supplies the missing "same factorization" argument at horizons — Q10), S1 (one currency, now with mechanism), A3 (clocks need consistency), Q3 defense (admissibility selection). Leaves untouched: Q1 (constraint algebra), Q2 (out-of-equilibrium lapse), Q6, Q8, Q9's general worry. New exposure: if attack 3 finds the Barontini split badly non-modular yet their entropic clock works fine anyway, N2's operational premise is empirically undermined — this note, unlike most theory notes, can lose to existing data.
+
+## References
+
+Takesaki, J. Funct. Anal. 9, 306 (1972) · Accardi & Cecchini, J. Funct. Anal. 45, 245 (1982) (generalized conditional expectations, for attack 1) · Parzygnat & Russo, "Bayesian inversion and the Tomita–Takesaki modular group" (2021) (state-preserving conditional expectations as Bayesian inverses — nearest adjacent lineage found for N2; no gravitational application located) · Bisognano & Wichmann (1976) · Connes & Rovelli (1994) · Šafránek, Deutsch, Aguirre, PRA 99, 010101 (2019) (observational entropy, for N3's coarse entropy) · Jacobson, PRL 75, 1260 (1995) · Barontini et al., arXiv:2509.07745.
