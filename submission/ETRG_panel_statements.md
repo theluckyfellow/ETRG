@@ -4,7 +4,7 @@
 
 **Four independent verdicts on the complete corpus**
 
-*July 2026 · The ETRG Program*
+*July 2026 · The ETRG Program · prepared for review*
 
 <p class="prov">Provenance disclosure: this document was constructed by four AI models
 (Claude Fable 5 — synthesis and implementation; DeepSeek-V4-Pro — derivations; GLM-5.2 —

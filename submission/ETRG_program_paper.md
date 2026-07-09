@@ -4,7 +4,7 @@
 
 **Time and gravity as the two exchange rates of one currency — a referee-hardened research program for unifying general relativity and quantum mechanics through entropy**
 
-*July 2026 · The ETRG Program*
+*July 2026 · The ETRG Program · prepared for review*
 
 <p class="prov">Provenance disclosure: this document was constructed by four AI models
 (Claude Fable 5 — synthesis and implementation; DeepSeek-V4-Pro — derivations; GLM-5.2 —
@@ -38,7 +38,7 @@ Time and gravity are the two exchange rates of a single currency — entropy rel
 No new weak-field predictions — the equations are GR's; the claim is structural and explanatory. No derivation of Λ. No resolution of the preferred-factorization problem beyond horizon/diamond observers (the cosmological case is open; the round-6 attempt to close it via Λ was adjudicated as necessity-without-sufficiency). No claim that the constraint algebra closes off-equilibrium in generic non-conformal spacetimes (leading-order conformal case resolved; the diamond-measure obstruction is open). No claim that the individual P2 leg responses are unique to this program — the novel content is the three-way lock through one modular rate. No claim that δ_lock is phenomenologically accessible — it is O(1) only for Planck-scale causal diamonds and is a consistency scale, not an experimental target. Exact Lorentz invariance of any substrate is assumed at the phenomenological layer, with a modular-theoretic derivation route (Borchers–Wiesbrock) identified but its circularity risk unresolved.
 
 
-![](figures/fig1_deflection.png)
+![Figure 1: The origin of the factor of two. A worldline samples the temporal and spatial faces of the entropic bookkeeping in proportion to (v/c)²; light reads both faces whole, doubling the Newtonian deflection of slow matter.](figures/fig1_deflection.png)
 
 ## ETRG-2: The Entropic Program — Unified Framework
 
@@ -63,7 +63,7 @@ Two, and the second is the program's known debt:
 
 **Layer G — geometry and gravity.** Area is *defined* as entanglement capacity, S = A/4Għ read right-to-left; distance from correlation decay **[redefinition; toy: toy_einstein geometry]**. The entanglement first law on all causal diamonds yields exactly the trace-free (unimodular) Einstein equations **[theorem: Jacobson 1995/2016, FGHMV 2014; published foundation: Alonso-Serrano & Liška 2022]**, with the temporal and spatial metric faces locked (γ = 1) as the thermality and variational faces of one modular generator under one calibration **[theorem at equilibrium: lock note]**. Light bending reads the written sector directly; the 2:1 deflection ratio is the null-surface signature **[theorem + framing: lock note L2–L4; symbolic: 17/17]**. Off equilibrium the lock drifts by δ_lock = S(ρ‖ρ_vac)/S_BH ≤ 2GΔE/(c⁴R) **[theorem: Casini bound]**; the leading correction is local, covariant, and bilinear **[import: FHHPRV 2017]**, leaving the diamond-measure question in non-conformal spacetimes **[open]**. Λ is the integration constant of the sector entropy cannot write **[theorem: unimodular structure]**. The whole layer has a computable toy: a lattice geometry built from mutual information alone curves linearly, directionally, and gauge-blindly in response to entanglement debt, and reproduces the parabolic boost weight unprompted **[toy: toy_einstein.py]**.
 
-![](figures/fig2_toy_einstein.png)
+![Figure 2: The computable universe (toy_einstein.py). Left: the distance-stretch response of a geometry built purely from mutual information to a localized entanglement defect — profiles collapse under s/ε (linear response). Right: enclosed modular debt per unit half-width, the parabolic Rindler boost weight, reproduced by the lattice unprompted.](figures/fig2_toy_einstein.png)
 
 **Layer M — matter.** Matter as localized entanglement disequilibrium ("debt"); energy as modular charge δ⟨K̂⟩ **[conjecture, with toy support]**. The two faces of excitation are physically distinct and geometry reads only one: spectrum-changing excitations move entanglement entropy at linear order, coherent excitations of equal energy leave it exactly untouched **[toy: coherent_thermal_check; leg dichotomy reproduced at geometric level in toy_einstein's gauge control]**. Mass as thermalized entanglement m = (T/c²)·δS and ħ as the holographic conversion factor **[conjecture: DeepSeek's P5/P6c, with the referee's conflation warning attached]**. The matter *spectrum* — why these fields, these generations, these masses — is not addressed **[open; named the hardest problem by the Fable attempt]**.
 
@@ -71,9 +71,9 @@ Two, and the second is the program's known debt:
 
 **Layer O — observation.** Measurement as repartitioning; collapse as the coarse face's bookkeeping of a partition update **[conjecture]**. No gravitational decoherence at any precision **[prediction P3 — a standing bet]**. The flagship falsifier: the sonic-horizon **three-way lock** (Hawking temperature, horizon entanglement, interior entropic-time lapse through one modular rate) with the leg-resolved coherent/incoherent discriminator **[prediction P2, round-3 form]**. Candidate fourth: the cosmological analogue of the lock tying H₀, S_Λ, and cosmic clock rates **[conjecture, unformulated]**.
 
-![](figures/fig3_q10_lock.png)
+![Figure 3: The selection mechanism on the lattice (q10_lattice_check.py). Coarse-graining in the modular basis preserves the entanglement first law (ratio 0.99992); the site-basis control breaks it (4.216) — the lock holds exactly for the coarse-grainings that the Takesaki argument admits.](figures/fig3_q10_lock.png)
 
-![](figures/fig4_label_freeness.png)
+![Figure 4: Label-freeness under back-reaction (label_freeness_toy.py). State-functional feedback channels preserve the state-space orbit between lab-time and entropic-time descriptions; only the label-consuming control — a coupling ETRG contains nowhere — breaks it, step-size-independently.](figures/fig4_label_freeness.png)
 
 ## 3. What the framework explains, and at what price
 

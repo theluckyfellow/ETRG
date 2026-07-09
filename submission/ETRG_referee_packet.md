@@ -2,9 +2,9 @@
 
 # ETRG-0: Request for Refutation
 
-**The adversarial review packet — S/E/P/Q claims, checkpoints, and kill criteria (v0.2)**
+**The adversarial review packet — claims, checkpoints, and kill criteria (v0.2)**
 
-*July 2026 · The ETRG Program*
+*July 2026 · The ETRG Program · prepared for review*
 
 <p class="prov">Provenance disclosure: this document was constructed by four AI models
 (Claude Fable 5 — synthesis and implementation; DeepSeek-V4-Pro — derivations; GLM-5.2 —
