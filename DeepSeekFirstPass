@@ -1,0 +1,59 @@
+We can build directly on Barontini’s operational framework—where an internal, entropic time emerges from entropy exchange between an observed “bright” sector and an unobserved “dark” sector—to construct a unified entropic theory of time and gravity. The central idea is that spacetime geometry itself is the bright sector, while the dark sector contains the microscopic, Planck‑scale degrees of freedom that source entropy. The total Wheeler‑DeWitt state is static, but partitioning the universe into these two sectors allows an entropic time to flow, and with it an effective dynamics that reproduces general relativity. The factor‑2 deflection of light then arises naturally from the different ways massive and massless particles couple to the entropic pump.
+
+---
+
+### 1. Partition and entropic time
+
+Consider the universe split into a geometric sector (metric \(g_{\mu\nu}\), matter fields) and a dark sector (quantum‑gravitational microstates). The total Hamiltonian vanishes, \(\hat{H}\Psi=0\), as in the WDW equation. Following Barontini, we introduce a clock variable \(\phi\) that tracks the local expansion or the center‑of‑mass of a test particle. The entropy of the bright sector \(S_{\text{obs}}\) changes only when entropy is exchanged with the dark sector. An entropic time \(\tau\) is defined by
+
+\[
+\tau = \frac{\sigma}{k_B} \int \left| \frac{dS_{\text{obs}}}{d\phi} \right| d\phi,
+\]
+
+where \(\sigma\) sets the unit of entropic time. This time is monotonic as long as \(dS_{\text{obs}}\) and \(d\phi\) share the same sign, and it stops when no entropy flows—exactly the behavior observed in the cold‑atom experiment.
+
+---
+
+### 2. Effective dynamics for a massive particle
+
+For a massive particle, its rest mass provides a natural clock: the particle’s proper time \(s\) is proportional to the phase of its wavefunction. In the non‑relativistic limit, the clock variable \(\phi\) can be identified with the particle’s center‑of‑mass coordinate along a timelike worldline. The entropy exchange with the dark sector is then driven by the particle’s motion through the ambient entropy gradient. The effective Schrödinger equation in entropic time takes the Barontini form
+
+\[
+i\hbar\, \partial_\tau \psi(\tau, \mathbf{x}) = \Xi(\tau)\,\psi(\tau, \mathbf{x}) + \Gamma(\tau)\, H_{\text{geom}} \psi(\tau, \mathbf{x}),
+\]
+
+where \(H_{\text{geom}}\) contains the spatial curvature terms (the “geometric” Hamiltonian of the bright sector). For a slowly moving massive particle, the pump factor \(\Gamma(\tau)\) is small and adiabatic; the dominant effect comes from the global phase \(\Xi(\tau)\), which encodes the Newtonian potential \(\Phi\). One recovers the standard Schrödinger equation with a gravitational potential \(V = m\Phi\), and the geodesic equation gives the Newtonian acceleration \(\mathbf{a} = -\nabla\Phi\). In this regime, only the time‑time component of the metric perturbation contributes—exactly the “time curvature” of general relativity.
+
+---
+
+### 3. Massless particles and the doubling of curvature
+
+A massless particle (e.g., a photon) has no rest mass and therefore no internal clock. Its entropic time cannot be defined via a proper time; instead, it must be constructed from an affine parameter \(\lambda\) along the null path. The entropy of the bright sector now changes because the photon’s wavepacket perturbs the entanglement structure of the dark sector as it moves. Crucially, the entropy gradient \(\frac{dS_{\text{obs}}}{d\phi}\) must be replaced by a directional derivative along the null trajectory, which couples to both temporal and spatial variations of the entropy density.
+
+In the effective entropic‑time Schrödinger equation for a massless field, the separation between the global phase \(\Xi\) and the geometric Hamiltonian \(H_{\text{geom}}\) breaks down. The pump factor \(\Gamma(\tau)\) now multiplies an operator that contains not only the spatial curvature (as for massive particles) but also the time‑curvature part that was previously absorbed into \(\Xi\). The result is that the null geodesic equation sees a potential that is twice as deep:
+
+\[
+\frac{d^2 x^i}{d\lambda^2} = -2\, \partial^i \Phi \quad \text{(for light)},
+\]
+
+while for a slow massive particle
+
+\[
+\frac{d^2 x^i}{dt^2} = -\partial^i \Phi.
+\]
+
+Thus the deflection angle for light passing a massive body is exactly twice the Newtonian prediction, matching the classic solar‑eclipse measurement. In the language of the metric, the spatial curvature (\(g_{ij} \approx \delta_{ij}(1-2\Phi)\)) contributes equally to the time curvature (\(g_{00} \approx -(1+2\Phi)\)), and the entropic pump for null trajectories couples to both with equal strength.
+
+---
+
+### 4. Unified entropic gravity hypothesis
+
+We can summarise the hypothesis as follows:
+
+* **Spacetime is an emergent bright sector** whose geometry is encoded in the entanglement entropy shared with a dark, unobserved sector. The total state is timeless, satisfying \(\hat{H}\Psi=0\).
+* **Entropic time** is defined operationally by the entropy flow between the two sectors, as in Barontini’s experiment. It provides a monotonic ordering parameter for the bright‑sector dynamics.
+* **Massive particles** carry an internal clock (their rest mass) and couple to the entropic pump primarily through the time‑time component of the metric, yielding Newtonian gravity in the non‑relativistic limit.
+* **Massless particles** lack an internal clock; their entropic time is built from an affine parameter and couples to the full Riemannian geometry. The effective Hamiltonian in entropic time receives equal contributions from time and space curvature, producing the factor‑2 deflection.
+* **General relativity** is recovered as the adiabatic limit of this entropic dynamics when the entropy flow is slow and the pump factor \(\Gamma(\tau)\) varies gently. Corrections to GR appear when \(\partial_\tau \Gamma\) is large, e.g., near singularities or in the very early universe, where the entropic time may stall or reverse.
+
+This framework not only explains the factor‑2 light bending but also provides a natural arrow of time linked to entropy growth in the bright sector, a resolution of the WDW “problem of time,” and a direct connection to experimentally accessible cold‑atom simulators. The Barontini experiment already demonstrates that an entropic time can robustly order events and that an effective Schrödinger equation with an entropy‑dependent pump reproduces the observed dynamics. Extending this program to analog gravitational systems—where the bright sector is a curved‑spacetime analogue and the dark sector is a controlled reservoir—could quantitatively test the entropic origin of the factor‑2 effect and the emergence of Einstein’s equations from purely entropic considerations.
