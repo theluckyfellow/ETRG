@@ -35,6 +35,8 @@ On a free-fermion chain in its ground state with interval A, modular modes from 
 
 A pass on (2) with a fail on (3) is the lattice avatar of N2/N3: the lock survives coarse-graining if and only if the coarse-graining is modular-covariant.
 
+**Status: verified (round 2, `q10_lattice_check.py`).** At filling 0.4, L = 200, ℓ = 40: first law pairing/δS_fine → 0.99991; coarse-modular ratio → 0.99992 (predicted 1); coarse-site control ratio → 4.216 (predicted ≠ 1); residual slope 2.0000 (predicted 2). Two honest annotations. (i) The first run, at half filling per the original spec, gave a *null result*: a pure potential perturbation is particle-hole-odd there, so the entire first-order response vanishes by symmetry (S(ε) = S(−ε)) and the run probed only the second-order regime — the spec's error, caught and fixed by moving off half filling. (ii) The sweep shows the modular lock degrading for ε ≳ 10⁻³ exactly as second-order terms overtake the linear response — the lattice image of L5's "equilibrium theorem with a finite validity domain," and a reminder that N3 is a first-order statement only.
+
 ## Requested attacks
 
 1. **N2's operational premise.** "Consistent bookkeeping ⇒ state-preserving conditional expectation exists" is the weakest joint. Construct an observer whose coarse-graining is physically reasonable (implementable, repeatable, drift-free in the quantities they track) yet admits no state-preserving conditional expectation — that would break the selection principle. Note the premise requires preservation of the *actual* state ω, not all states; argue whether that is the right operational demand or too strong/too weak.
