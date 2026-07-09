@@ -10,6 +10,8 @@
 | **ETRG_referee_packet.pdf** | The adversarial review packet: numbered claims, checkpoints, kill criteria | Circulate to physicists for attack — designed to be refuted |
 | **ETRG_supplementary_notes.pdf** | The four technical notes with round-by-round adjudications | Supplementary material |
 | **ETRG_panel_statements.pdf** | Four independent AI closing verdicts on the corpus | Supplementary material / provenance |
+| **ETRG_experimental_protocol.pdf** | P1 and P2 specified with published apparatus numbers | The Birmingham / analogue-horizon approach — send with the program paper |
+| **ETRG_essay.pdf** | The factor-of-two essay (~1,450 words) | Gravity Research Foundation / FQxI essay entries |
 
 ## Figures
 
