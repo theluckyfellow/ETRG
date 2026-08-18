@@ -1,6 +1,6 @@
 # ETRG Repository Index — Reading Order
 
-*A program for unifying general relativity and quantum mechanics through entropy, constructed and adversarially reviewed by four AI models over six rounds (July 2026), with a seventh round by a fifth model (August 2026). Start at the top; depth increases downward.*
+*A program for unifying general relativity and quantum mechanics through entropy, constructed and adversarially reviewed by four AI models over six rounds (July 2026), then rounds 7–10 and the gates session by a fifth model under Fable referee cycles (August 2026). Start at the top; depth increases downward.*
 
 ## Start here
 
@@ -32,15 +32,16 @@
 19. **ETRG-10_second_observable.md** — Gate 2, middle item: the which-horizon question, and its answer at working-position level — the naive apparent-horizon clock is excluded by DES time-dilation data (b = 1.003 ± 0.005); the event-horizon reading survives (a post-diction and a kill); the thermodynamics-vs-data collision named; a₀-drift as the second discriminant.
 20. **ETRG-11_gate1_handoff.md** — the specialist hand-off: the two theorems the program needs (Type III restatement — with the beyond-Connes content and the crossed-product surrogate named; off-equilibrium integrability — formalism named, non-conformal case flagged as absent from the literature), the Gate-2 remainders explicitly owned, the CLPW clock-first hook.
 21. **ETRG-8_gate2_referee_fable.md** — Fable's review of the Gate-2 homework: the σ derivation's stipulation caught (F1), the dilation data shown to already exclude the naive apparent-horizon branch (F2), the Type III landmines named for the hand-off (F3/F5), and the Gate-2 remainder ownership fixed (F7). All accepted and repaired in place.
+22. **ETRG_gates_audit_fable.md** — Fable's third-party audit of the gates session: scripts bit-identical, every external claim verified at the source (DES, Cai–Kim, Wang–Gong–Abdalla, the Barontini quotes), the referee repairs confirmed in place, the ledgers current. One substantive correction with a new committed control (`cusp_smalleps_control.py`): the cusp's margin is **logarithmic** in ε, not a power law — α = 0.17/0.34 are fit artifacts — and half the site-basis distance matrix sits on the clip floor; the clip sweep is required before the cusp's sharpness is cited as physics. Plus: Addendum 2's π/2 rests on three stacked O(1)s; ETRG-10's "post-diction" reframed as consistency-plus-kill.
 
 ## The bold round (full-unification attempts, blind protocol)
 
-22. **ETRG-1_bold_fable.md** · **ETRG-1_bold_deepseek.md** · **ETRG-1_bold_kimi.md** — three independent attempts; convergence on ~5/8 postulates.
-23. **ETRG-1_bold_referee.md** — GLM's cross-review: convergence table, six attacks, the Λ/factorization adjudication, the ETRG-2 grafting instructions.
+23. **ETRG-1_bold_fable.md** · **ETRG-1_bold_deepseek.md** · **ETRG-1_bold_kimi.md** — three independent attempts; convergence on ~5/8 postulates.
+24. **ETRG-1_bold_referee.md** — GLM's cross-review: convergence table, six attacks, the Λ/factorization adjudication, the ETRG-2 grafting instructions.
 
 ## Panel verdicts
 
-24. **ETRG-1_closing_fable.md** · **ETRG-0_closing_statement_glm.md** · **ETRG-1_closing_kimi.md** · **ETRG-1_closing_deepseek.md** — four independent closing statements; convergent verdict: research program with a falsifiability agenda; recruit a human physicist.
+25. **ETRG-1_closing_fable.md** · **ETRG-0_closing_statement_glm.md** · **ETRG-1_closing_kimi.md** · **ETRG-1_closing_deepseek.md** — four independent closing statements; convergent verdict: research program with a falsifiability agenda; recruit a human physicist.
 
 ## Code and numerics (all runnable; results committed)
 
@@ -78,7 +79,8 @@
 - **modular_tolman_check.py** + **modular_tolman_results.txt** — the cone × modular-flow weld: interval kernels are parabolic in slow/medium/fast cone regions (r = 0.94–0.96) with universal amplitude to 10% (the t-cancellation measured); the cone enters the modular structure through the conformal coordinate.
 - **cosmic_numbers_check.py** + **cosmic_numbers_results.txt** — the consistency layer: de Sitter surface gravity vs MOND a₀ (factor 4.5; a₀ vs cH₀/2π at 1.15); S_Λ = (π/Ω_L)(t_H/t_P)² exactly; the cosmic entropic clock rate ≡ H_inf (definitional — the lock needs a second observable).
 - **bounded_drift_check.py** + **bounded_drift_results.txt** — the weld's number, asterisk-free: the bounded generator C (same eigenvectors as K, no clip anywhere) separates geometric from scrambled 2.9→9.1× with growing slope 0.55, same order as the K version (B4's teeth bar fails as registered — the bounded variant's teeth are inherently weaker, 2.4×; documented).
-- **cusp_granularity_check.py** + **cusp_granularity_results.txt** — the cusp is PHYSICS: with a continuous locality functional the margin still grows sublinearly (α = 0.17, even more cusp-like than the quantile version's 0.34); the extremum has a divergent slope at the physical factorization; selection robust (F_site wins at every ε; Haar teeth).
+- **cusp_granularity_check.py** + **cusp_granularity_results.txt** — the continuous-functional ε-sweep: no smooth basin (F_site wins at every ε; Haar teeth). **Shape verdict amended by the gates audit:** the "α = 0.17 power law" is a fit artifact — see the small-ε control below.
+- **cusp_smalleps_control.py** + **cusp_smalleps_results.txt** — Fable's reviewer control: the margin is **linear in ln(1/ε)** (constant 1.15–1.22 per e-fold; power law rejected at ε = 10⁻⁴), extrapolating to zero near ε ≈ 1.5×10⁻⁵; the Fiedler region selection is exonerated; 870/1770 site-basis d_MI pairs sit at the −ln(clip) cap, so the functional's depth scale is regulator-structured. The cusp is logarithmic in the MI metric; the clip sweep is nominated before its sharpness is cited as physics.
 
 ## Raw adversarial records (provenance)
 

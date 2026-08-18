@@ -2,7 +2,7 @@
 
 **Time and gravity as the two exchange rates of one currency: entropy.**
 
-A research program for unifying general relativity and quantum mechanics through entropy, constructed in July 2026 by four AI models (Claude Fable 5, DeepSeek-V4-Pro, GLM-5.2, Kimi-K2.7) in an adversarial-review protocol, then extended in August 2026 through rounds 7–10 by a fifth model (Kimi-K3) under referee cycles from Fable 5 — directed throughout by a human originator. Every claim in this repository carries its attack history — including retractions by every model. The program's honest classification, reached independently by all panelists: *a research program with a falsifiability agenda, not yet a physical theory* — and it says so on every title page.
+A research program for unifying general relativity and quantum mechanics through entropy, constructed in July 2026 by four AI models (Claude Fable 5, DeepSeek-V4-Pro, GLM-5.2, Kimi-K2.7) in an adversarial-review protocol, then extended in August 2026 through rounds 7–10 and the gates session by a fifth model (Kimi-K3) under referee cycles from Fable 5 — directed throughout by a human originator. Every claim in this repository carries its attack history — including retractions by every model. The program's honest classification, reached independently by all panelists: *a research program with a falsifiability agenda, not yet a physical theory* — and it says so on every title page.
 
 ## Start here
 
@@ -11,6 +11,7 @@ A research program for unifying general relativity and quantum mechanics through
 - **[ETRG-1_thesis.md](ETRG-1_thesis.md)** — the thesis in four referee-hardened clauses (5 minutes).
 - **[ETRG-4_unification_graph.md](ETRG-4_unification_graph.md)** — the terrain: thirteen routes from entropy, causality, and time to gravity, and where they meet.
 - **[ETRG-2.md](ETRG-2.md)** — the unified framework: layer map with status flags, the hard kernel, the research agenda.
+- **[ETRG-8_path_to_theory.md](ETRG-8_path_to_theory.md)** — the three gates between research program and physical theory, with the Gate-2 homework (ETRG-9/10) and the Gate-1 specialist hand-off (ETRG-11).
 - **[ETRG-P2_protocol_fable.md](ETRG-P2_protocol_fable.md)** — the experiment: a sonic-horizon three-way lock with numbers, per-leg precision budgets, a Page-series fourth leg, and twelve kill rows. The program's primary ask of the experimental community.
 - **[submission/](submission/)** — six review-ready PDFs (program paper, referee packet, supplementary notes, panel statements, experimental protocol, essay) with figures and a regeneration recipe.
 - **[SUBMISSION_ADVICE.md](SUBMISSION_ADVICE.md)** — who gets what, in what order.
@@ -31,6 +32,15 @@ The July program left one hard kernel: *what selects the tensor factorization* t
 - **First systematic prior-art audit** ([ETRG_prior_art_audit.md](ETRG_prior_art_audit.md)): the assembled program is not preempted; two citation debts found and discharged (Giovanazzi 2011; Almeida & Rodrigues 2021).
 
 Negative results are committed with equal standing: dead metric families, the retracted tail hierarchy, the region-agnostic dephasing lemma, and failed builds with diagnosed causes. The referee reports (`ETRG-3_referee_fable.md`, `ETRG-3_round8_referee_fable.md`, `ETRG-4_routeB_referee_fable.md`, `ETRG_overnight_referee_fable.md`) are in the repository unedited.
+
+## The gates (toward theory status)
+
+[ETRG-8_path_to_theory.md](ETRG-8_path_to_theory.md) names what separates the program from a physical theory: **structural closure** (the Type III restatement and off-equilibrium integrability — needs an algebraic-QFT specialist), **a number of its own**, and **experimental contact**. The gates session then worked every internally workable item, each note passing an internal referee cycle (`ETRG-8_gate2_referee_fable.md`) and a third-party audit (`ETRG_gates_audit_fable.md`):
+
+- **σ, resolved in shape** (ETRG-9 + the executed Barontini cross-check): the experiment's σ is a declared unit choice in the paper itself; what is physical is the Erker clock bound, with σ = ħ/k_BT as its saturation value — so the program's claim ("clocks saturate the bound") is now a precise laboratory task, not an analytic debt.
+- **The which-horizon question, answered at working position** (ETRG-10): a naive apparent-horizon cosmic clock is already excluded by DES supernova time dilation (b = 1.003 ± 0.005 stat ± 0.010 sys); the event-horizon reading survives; a₀ drift at high redshift is the named discriminant.
+- **The Gate-1 hand-off, written for a specialist** (ETRG-11): the two theorems the program needs, stated on crossed-product technology (Witten 2021; CLPW 2022) with the beyond-Connes content named up front. Contact: GitHub issues.
+- **Marginal items:** the weld's drift number now ships regulator-free (`bounded_drift_check.py`, with its Haar-teeth caveat registered); the factorization extremum shows no smooth basin at any probed ε — the audit's control finds the cusp is logarithmic in the MI metric, with a clip-sweep nominated before its sharpness counts as physics.
 
 ## Reproducing the numerics
 

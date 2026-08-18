@@ -1,0 +1,37 @@
+==============================================================================
+CUSP SMALL-EPS CONTROL -- shape of the extremum, decided
+==============================================================================
+
+region check eps=0.001  seed 0: IDENTICAL to site-basis region
+region check eps=0.001  seed 1: IDENTICAL to site-basis region
+region check eps=0.01   seed 0: IDENTICAL to site-basis region
+region check eps=0.01   seed 1: IDENTICAL to site-basis region
+region check eps=0.03   seed 0: IDENTICAL to site-basis region
+region check eps=0.03   seed 1: IDENTICAL to site-basis region
+=> Fiedler region selection exonerated as the cusp's source
+
+F_site alignment (continuous): 20.350
+     eps  mean rival    margin  eps-tripling ratio  slope per e-fold
+------------------------------------------------------------------------------
+   1e-04      18.085     2.265                 nan               nan
+   3e-04      16.823     3.527               1.557             1.148
+   1e-03      15.410     4.940               1.401             1.174
+   3e-03      14.069     6.281               1.272             1.221
+------------------------------------------------------------------------------
+power law demands constant tripling ratio 3^0.17 = 1.21;
+a logarithm demands constant slope per e-fold.
+
+site-basis d_MI: max = 27.6 (clip cap = 27.6); pairs within 1.0 of cap: 870
+
+verdicts:
+  power-law (alpha=0.17) prediction at eps=1e-4: 3.56; observed 2.27  -> power law REJECTED
+  slope per e-fold across the small-eps range: ['1.15', '1.17', '1.22']  -> LOGARITHMIC (constant slope)
+  extrapolated margin zero: eps ~ 1.5e-05
+
+Reading: the margin is ~linear in ln(1/eps) -- a LOGARITHMIC cusp in
+the MI metric, inherited from d_MI = -ln(I/Imax) responding to the
+O(eps^2) far-pair MI a rotation switches on.  The committed alpha=0.17
+is a power-law fit to a logarithm (as, likely, is the quantile
+version's 0.34).  'No smooth basin' stands -- F_site wins across 3.7
+decades of eps -- but the exponent is not physics, and the vanishing
+scale's regulator-(in)dependence needs the clip sweep (nominated).
