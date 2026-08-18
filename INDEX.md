@@ -27,15 +27,16 @@
 14. **ETRG-6_mysteries_map.md** — what the hypothesis explains if true: nine mysteries, each with its evidence angle; the three buildable ones; the MOND caution. With `cosmic_numbers_check.py` and Fable's referee addendum (§§1,7,9 relabeled reinterpretations; R1/R2 honesty fixes, applied).
 15. **ETRG_prior_art_audit.md** — the first systematic prior-art pass (a standing kill criterion, never before run): the assembled program survives; two citation debts found and discharged (Giovanazzi 2011 — the acoustic κ/12 proposal; Almeida & Rodrigues 2021 — interior entropic time).
 16. **ETRG_overnight_referee_fable.md** — Fable's third-party review of the whole August batch: all 26 scripts bit-identical, citations and P2 arithmetic externally verified, verdict "survives intact." One new committed computation (the small-ε toehold control — the extremum is a cusp, selection stronger than shown); the amendment-sweep process rule nominated and applied.
+17. **ETRG-8_path_to_theory.md** — the gap analysis: what separates the program from a physical theory. Three gates — structural closure (the Type III restatement on crossed-product technology; constraint-algebra closure off-equilibrium), a number of its own (no-Page-knee is nearest; the cosmological second observable; the σ calibration), and experimental contact (P2's own rows at risk). With the calibration that GR needs no matter spectrum either, and the sequencing: one algebraic-QFT specialist is the highest-leverage act available.
 
 ## The bold round (full-unification attempts, blind protocol)
 
-17. **ETRG-1_bold_fable.md** · **ETRG-1_bold_deepseek.md** · **ETRG-1_bold_kimi.md** — three independent attempts; convergence on ~5/8 postulates.
-18. **ETRG-1_bold_referee.md** — GLM's cross-review: convergence table, six attacks, the Λ/factorization adjudication, the ETRG-2 grafting instructions.
+18. **ETRG-1_bold_fable.md** · **ETRG-1_bold_deepseek.md** · **ETRG-1_bold_kimi.md** — three independent attempts; convergence on ~5/8 postulates.
+19. **ETRG-1_bold_referee.md** — GLM's cross-review: convergence table, six attacks, the Λ/factorization adjudication, the ETRG-2 grafting instructions.
 
 ## Panel verdicts
 
-19. **ETRG-1_closing_fable.md** · **ETRG-0_closing_statement_glm.md** · **ETRG-1_closing_kimi.md** · **ETRG-1_closing_deepseek.md** — four independent closing statements; convergent verdict: research program with a falsifiability agenda; recruit a human physicist.
+20. **ETRG-1_closing_fable.md** · **ETRG-0_closing_statement_glm.md** · **ETRG-1_closing_kimi.md** · **ETRG-1_closing_deepseek.md** — four independent closing statements; convergent verdict: research program with a falsifiability agenda; recruit a human physicist.
 
 ## Code and numerics (all runnable; results committed)
 
