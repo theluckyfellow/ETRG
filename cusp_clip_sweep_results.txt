@@ -1,0 +1,49 @@
+==============================================================================
+CUSP CLIP SWEEP -- is the cusp's sharpness the regulator's?
+==============================================================================
+
+DCLIP = 1e-08  (cap =  18.4):  a_site = 14.865
+    eps =  1e-04:  mean rival   14.873   margin   -0.009
+    eps =  1e-03:  mean rival   14.482   margin    0.383
+    eps =  1e-02:  mean rival   12.441   margin    2.424
+    eps =  1e-01:  mean rival    8.689   margin    6.176
+
+DCLIP = 1e-12  (cap =  27.6):  a_site = 20.255
+    eps =  1e-04:  mean rival   18.035   margin    2.221
+    eps =  1e-03:  mean rival   15.412   margin    4.844
+    eps =  1e-02:  mean rival   12.529   margin    7.727
+    eps =  1e-01:  mean rival    8.684   margin   11.572
+
+DCLIP = 1e-16  (cap =  36.8):  a_site = 25.945
+    eps =  1e-04:  mean rival   18.174   margin    7.771
+    eps =  1e-03:  mean rival   15.416   margin   10.529
+    eps =  1e-02:  mean rival   12.522   margin   13.423
+    eps =  1e-01:  mean rival    8.728   margin   17.217
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   PASS  R1: a_site ~ linear in -ln(DCLIP) (r^2 > 0.9, slope > 0)    slope 0.602/nat, r^2 = 1.000, a_site = ['14.9', '20.3', '25.9']
+   PASS  R2: margin(1e-4) tracks the floor (halves at 1e-8, grows at 1e-16)  -0.01 / 2.22 / 7.77 at caps 18.4/27.6/36.8
+   FAIL  R3: sign is physics -- F_site wins everywhere               min margin -0.009
+------------------------------------------------------------------------------
+Overall: FAIL
+
+Reading (if R1+R2+R3): the cusp's depth and vanishing scale are
+REGULATOR-STRUCTURED -- quantitative margin/exponent claims must
+carry their clip -- while the strict-local-extremum statement
+(F_site wins, margin > 0) is clip-independent and stands as the
+toehold's regulator-free content.
+
+ADDENDUM: r_99 functional (round-9 killer test's metric) vs the cap:
+  DCLIP = 1e-08 (cap  18.4):  a_site = 4.705   a_site/cap = 0.2554
+  DCLIP = 1e-12 (cap  27.6):  a_site = 7.058   a_site/cap = 0.2554
+  DCLIP = 1e-16 (cap  36.8):  a_site = 9.411   a_site/cap = 0.2554
+
+a_site/cap is CONSTANT: the scrambled r_99 baseline saturates the cap
+(>= 1% of a scrambled kernel's weight sits on capped pairs), so the
+r_99 alignment is exactly cap / r_99_actual.  Consequences: (i) the
+round-9 candidate ORDERING is exactly clip-invariant -- the cap
+cancels in every same-clip ratio -- so the killer test's comparisons
+stand rigorously; (ii) absolute alignment values, and fixed-number
+bars like the Haar-teeth 'alignment < 3', are regulator-denominated
+and should be restated as fractions of the cap (3/27.6 = 0.11).

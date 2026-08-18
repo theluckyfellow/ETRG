@@ -60,3 +60,16 @@ Nominations, ranked:
 2. **The differential-QSL redo of Addendum 2's O(1)** (§2) — Bures-angle rate form; either it yields a constant or it shows the constant is channel-dependent, which would itself be a finding against the saturation claim's universality.
 3. **Reframe "post-diction"** in ETRG-10 §3/§5 and the memory log (§3 above) — one sentence each.
 4. **Carry-over (overnight audit):** P2's two derivation debts (thermal-seeding dilution assumption made explicit; κ̂₃ control systematics row) before any lab contact — unchanged, and ETRG-11's contact plan makes them due.
+
+---
+
+## Postscript: the clip sweep, executed (nomination 1) — the sharpness is the regulator's; the ordering is exactly clip-invariant
+
+`cusp_clip_sweep.py` + results, pre-registered R1–R3, sweeping the d_MI floor over {10⁻⁸, 10⁻¹², 10⁻¹⁶}:
+
+- **R1 PASS.** a_site is linear in −ln(clip): 14.9 / 20.3 / 25.9 at caps 18.4 / 27.6 / 36.8 (slope 0.602 per nat, r² = 1.000). At the standard clip, the continuous alignment's magnitude is ~60% regulator.
+- **R2 PASS.** The margin's vanishing scale tracks the floor: at ε = 10⁻⁴ the margin reads −0.01 / 2.22 / 7.77 across the three clips.
+- **R3 FAIL as registered.** At the (clip 10⁻⁸, ε = 10⁻⁴) corner the margin is −0.009 — zero within seed noise: the functional's resolution floor, not evidence of a crossing. At every resolvable (clip, ε) combination F_site wins. Reported as measured; no bar movement.
+- **Post-hoc addendum (reported, not barred):** the round-9 r_99 functional shares the cap *exactly* — a_site/cap = 0.2554 at all three clips. The scrambled baseline saturates the cap, so the r_99 alignment ≡ cap / r_99_actual. This cuts both ways: the round-9 candidate **ordering is exactly clip-invariant** (the cap cancels in every same-clip ratio — the killer test's comparisons stand *more* rigorously than before), while **absolute alignment values and fixed-number bars** (the Haar-teeth "< 3") are regulator-denominated and should be restated as fractions of the cap (3/27.6 ≈ 0.11).
+
+Amended bottom line for the toehold: what survives regulator-free is the **ordering** — the physical factorization beats every rival wherever the functional can resolve, at every clip — and that is the toehold's actual content. What retires: cusp exponents, margin magnitudes, alignment absolutes, and any teeth bar not stated relative to the cap.
