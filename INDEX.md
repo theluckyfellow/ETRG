@@ -27,16 +27,20 @@
 14. **ETRG-6_mysteries_map.md** — what the hypothesis explains if true: nine mysteries, each with its evidence angle; the three buildable ones; the MOND caution. With `cosmic_numbers_check.py` and Fable's referee addendum (§§1,7,9 relabeled reinterpretations; R1/R2 honesty fixes, applied).
 15. **ETRG_prior_art_audit.md** — the first systematic prior-art pass (a standing kill criterion, never before run): the assembled program survives; two citation debts found and discharged (Giovanazzi 2011 — the acoustic κ/12 proposal; Almeida & Rodrigues 2021 — interior entropic time).
 16. **ETRG_overnight_referee_fable.md** — Fable's third-party review of the whole August batch: all 26 scripts bit-identical, citations and P2 arithmetic externally verified, verdict "survives intact." One new committed computation (the small-ε toehold control — the extremum is a cusp, selection stronger than shown); the amendment-sweep process rule nominated and applied.
-17. **ETRG-8_path_to_theory.md** — the gap analysis: what separates the program from a physical theory. Three gates — structural closure (the Type III restatement on crossed-product technology; constraint-algebra closure off-equilibrium), a number of its own (no-Page-knee is nearest; the cosmological second observable; the σ calibration), and experimental contact (P2's own rows at risk). With the calibration that GR needs no matter spectrum either, and the sequencing: one algebraic-QFT specialist is the highest-leverage act available.
+17. **ETRG-8_path_to_theory.md** — Fable's gate analysis: what theory status requires (structural closure; a number of its own; contact), what would not be enough, and the sequence. The program's gap analysis, consolidated.
+18. **ETRG-9_sigma_calibration.md** — Gate 2, third item: σ = ħ/k_BT at equilibrium — scale forced by KMS, O(1) normalization stipulated (referee F1); the tick-time convergence is suggestive, not a theorem (F4); Connes–Rovelli cited. The Barontini cross-check is nominated with T_eff pre-registered.
+19. **ETRG-10_second_observable.md** — Gate 2, middle item: the which-horizon question, and its answer at working-position level — the naive apparent-horizon clock is excluded by DES time-dilation data (b = 1.003 ± 0.005); the event-horizon reading survives (a post-diction and a kill); the thermodynamics-vs-data collision named; a₀-drift as the second discriminant.
+20. **ETRG-11_gate1_handoff.md** — the specialist hand-off: the two theorems the program needs (Type III restatement — with the beyond-Connes content and the crossed-product surrogate named; off-equilibrium integrability — formalism named, non-conformal case flagged as absent from the literature), the Gate-2 remainders explicitly owned, the CLPW clock-first hook.
+21. **ETRG-8_gate2_referee_fable.md** — Fable's review of the Gate-2 homework: the σ derivation's stipulation caught (F1), the dilation data shown to already exclude the naive apparent-horizon branch (F2), the Type III landmines named for the hand-off (F3/F5), and the Gate-2 remainder ownership fixed (F7). All accepted and repaired in place.
 
 ## The bold round (full-unification attempts, blind protocol)
 
-18. **ETRG-1_bold_fable.md** · **ETRG-1_bold_deepseek.md** · **ETRG-1_bold_kimi.md** — three independent attempts; convergence on ~5/8 postulates.
-19. **ETRG-1_bold_referee.md** — GLM's cross-review: convergence table, six attacks, the Λ/factorization adjudication, the ETRG-2 grafting instructions.
+22. **ETRG-1_bold_fable.md** · **ETRG-1_bold_deepseek.md** · **ETRG-1_bold_kimi.md** — three independent attempts; convergence on ~5/8 postulates.
+23. **ETRG-1_bold_referee.md** — GLM's cross-review: convergence table, six attacks, the Λ/factorization adjudication, the ETRG-2 grafting instructions.
 
 ## Panel verdicts
 
-20. **ETRG-1_closing_fable.md** · **ETRG-0_closing_statement_glm.md** · **ETRG-1_closing_kimi.md** · **ETRG-1_closing_deepseek.md** — four independent closing statements; convergent verdict: research program with a falsifiability agenda; recruit a human physicist.
+24. **ETRG-1_closing_fable.md** · **ETRG-0_closing_statement_glm.md** · **ETRG-1_closing_kimi.md** · **ETRG-1_closing_deepseek.md** — four independent closing statements; convergent verdict: research program with a falsifiability agenda; recruit a human physicist.
 
 ## Code and numerics (all runnable; results committed)
 
