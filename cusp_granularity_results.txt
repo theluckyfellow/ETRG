@@ -1,0 +1,27 @@
+==============================================================================
+CUSP GRANULARITY CHECK -- continuous locality functional
+==============================================================================
+
+F_site alignment (continuous): 20.350
+
+   eps  mean rival    margin
+------------------------------------------------------------------------------
+  0.01      12.561     7.789
+  0.03      10.984     9.366
+  0.10       8.706    11.644
+  0.30       5.786    14.564
+  0.50       5.323    15.027
+------------------------------------------------------------------------------
+Haar control: alignment 2.20 (bar < 3)
+
+margin ~ eps^0.17   (alpha ~ 2: smooth extremum; alpha < 1: cusp is physics)
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   PASS  C1: F_site wins at every eps                          margins ['7.79', '9.37', '11.64', '14.56', '15.03']
+   PASS  C2: margin shape decided (alpha > 1.2 or < 0.8)       alpha = 0.17
+   PASS  C3: Haar alignment < 3                                2.20
+------------------------------------------------------------------------------
+Overall: PASS
+
+Verdict on the cusp: cusp is PHYSICS (sublinear margin at the extremum) (alpha = 0.17)

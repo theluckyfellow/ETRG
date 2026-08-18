@@ -77,6 +77,8 @@
 - **ETRG-4_routeB_referee_fable.md** + **referee_routeB_check.py** + results — Fable's Route-B review: D1's conclusion refuted by the interval-entropy operationalization (verified bit-identical); wave suite's strong-field contamination isolated; geodesic header/provenance fixed; map nits applied.
 - **modular_tolman_check.py** + **modular_tolman_results.txt** — the cone × modular-flow weld: interval kernels are parabolic in slow/medium/fast cone regions (r = 0.94–0.96) with universal amplitude to 10% (the t-cancellation measured); the cone enters the modular structure through the conformal coordinate.
 - **cosmic_numbers_check.py** + **cosmic_numbers_results.txt** — the consistency layer: de Sitter surface gravity vs MOND a₀ (factor 4.5; a₀ vs cH₀/2π at 1.15); S_Λ = (π/Ω_L)(t_H/t_P)² exactly; the cosmic entropic clock rate ≡ H_inf (definitional — the lock needs a second observable).
+- **bounded_drift_check.py** + **bounded_drift_results.txt** — the weld's number, asterisk-free: the bounded generator C (same eigenvectors as K, no clip anywhere) separates geometric from scrambled 2.9→9.1× with growing slope 0.55, same order as the K version (B4's teeth bar fails as registered — the bounded variant's teeth are inherently weaker, 2.4×; documented).
+- **cusp_granularity_check.py** + **cusp_granularity_results.txt** — the cusp is PHYSICS: with a continuous locality functional the margin still grows sublinearly (α = 0.17, even more cusp-like than the quantile version's 0.34); the extremum has a divergent slope at the physical factorization; selection robust (F_site wins at every ε; Haar teeth).
 
 ## Raw adversarial records (provenance)
 

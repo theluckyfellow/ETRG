@@ -63,3 +63,19 @@ The nominated check was executed against the published paper (arXiv:2509.07745, 
 3. **The F1/F4 gap resolves structurally.** The correct physical statement is not "the exchange rate is universally k_BT/ħ per nat" — weakly coupled probes exchange at *coupling-dependent* rates (Spohn–Lebowitz entropy production), so no universal rate exists. What is universal is the **bound**: Erker's theorem says resolving a tick costs ≳ one nat per ħ/(k_BT) *regardless of coupling*. So σ = ħ/(k_BT) is the **saturation value of the Erker bound — the rate of an ideal clock** — and A2's calibration and A3's bound are the same *bound*, not the same rate. The equality-vs-inequality mismatch the referee flagged (F4) dissolves: both sides are inequalities, saturated in the ideal limit. **Status upgrade, referee-consistent: σ = ħ/(k_BT) as the ideal-clock exchange rate (the Erker bound); real clocks exchange slower; the unit σ in Barontini's sense remains conventional.** The remaining derivation (the O(1) of the bound itself, from the probe-bath entropy production) is standard open-systems machinery and is nominated, not done.
 
 **Net for Gate 2's σ item:** the question has changed shape and largely closed. Three resolutions stood in ETRG-8; the executed check supports a synthesis: *conventional as a unit* (Barontini's construction), *physical as a bound* (Erker + KMS), and *the program's strong claim* (clocks saturate the bound) now has a precise, testable form — measure an absolute entropy-exchange rate against an independent clock and test saturation. That measurement is the only remaining version of the σ question, and it is a lab task, not an analytic one.
+
+---
+
+## Addendum 2: the O(1) of the bound, from the quantum speed limit
+
+The remaining analytic gap (F1/F4): what pure number sits in front of ħ/(k_BT) in the ideal exchange rate? The derivation, with its load-bearing step flagged:
+
+1. **One nat of entropy exchange is one nat of distinguishability** — the unit in which two states of the exchange channel become (infinitesimally more) orthogonal. *This identification is the load-bearing step; it is the purification/two-face principle (B1) read at the single-nat level.*
+2. **The fastest orthogonalization quantum mechanics allows** is the Margolus–Levitin bound: t ≥ πħ/(2E) for mean energy E above the ground state. (Mandelstam–Tamm gives the same form with ΔE; the two energy measures differ by their own O(1).)
+3. **At temperature T, the energy scale of a thermal exchange channel is E ~ k_BT** — the channel's available free energy per exchanged nat.
+
+Assembled: the minimum time per exchanged nat is t_nat ≥ πħ/(2k_BT), i.e.
+
+$$\sigma_{\text{sat}} = \frac{\pi}{2}\,\frac{\hbar}{k_B T} \quad \text{per nat},$$
+
+the ideal exchange rate being (2/π)(k_BT/ħ) nats per second. **The O(1) is π/2, from the quantum speed limit** — with the Mandelstam–Tamm variant and the energy-measure convention leaving the honest range O(1) ∈ [1, π/2]. Status: **[derived at the level of the QSL mechanism; the nat-equals-orthogonalization identification flagged as the step a referee should attack]**. Note the consistency: Erker 2017's tick bound is itself QSL-based, so both sides of the A2/A3 convergence now sit on the *same* mechanism — the suggestive convergence of §3 upgrades to a shared-mechanism argument, pending a referee's attack on step 1.

@@ -1,0 +1,22 @@
+==============================================================================
+BOUNDED-GENERATOR DRIFT VARIANT -- the weld's number, asterisk-free
+==============================================================================
+
+L=  40 [C]: eta(cont) = 0.04679, best rival = 0.13550, separation = 2.9x
+L=  80 [C]: eta(cont) = 0.02291, best rival = 0.09608, separation = 4.2x
+L= 160 [C]: eta(cont) = 0.01132, best rival = 0.06944, separation = 6.1x
+L= 320 [C]: eta(cont) = 0.00562, best rival = 0.05136, separation = 9.1x
+
+Haar control (L=80, bounded): eta = 0.05529 (vacuum: 0.02291)
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   PASS  B1: bounded generator separates > 3x at L=80          4.2x
+   PASS  B2: separation grows with L (slope > 0.3)             slope 0.55, seps ['2.9', '4.2', '6.1', '9.1']
+   PASS  B3: bounded separations same order as K's             C 4.2x vs K 5.4x
+   FAIL  B4: Haar control NOT drift-free (> 3x vacuum)         0.05529 vs 0.02291
+------------------------------------------------------------------------------
+Overall: FAIL
+
+If B1-B2 pass: the weld's first number ships as eta_C -- same
+eigenbasis compatibility, no regulator anywhere, no asterisk.
