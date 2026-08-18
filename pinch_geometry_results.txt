@@ -1,0 +1,22 @@
+========================================================================
+PINCH GEOMETRY CHECK -- the cone collapsing (ETRG-5 toy)
+========================================================================
+
+ uniform:  center/bulk bond ratio =     1.01   cross-MI(I0-20:I0+20) = 6.61e-05   edge modes = 14   I(left:right) = 2.3252
+ pinched:  center/bulk bond ratio =    32.23   cross-MI(I0-20:I0+20) = 0.00e+00   edge modes = 14   I(left:right) = 0.0000
+     cut:  center/bulk bond ratio =    31.48   cross-MI(I0-20:I0+20) = 0.00e+00   edge modes = 14   I(left:right) = 0.6118
+
+Reading:
+  (a) pinch_ratio >> 1: MI distance across the degeneracy diverges
+  (b) cross-MI -> 0 and I(left:right) -> 0: two independent domains
+  (c) edge modes > uniform: new frozen degrees of freedom at the
+      degeneracy (horizon modes)
+
+PASS / FAIL table (exploratory expectations):
+------------------------------------------------------------------------
+   PASS  (a) pinch: center bond anomalously long (> 2x uniform)  32.2 vs uniform 1.0
+   PASS  (b) pinch: cross-MI strongly suppressed (< 0.1x uniform)  0.00e+00 vs 6.61e-05
+   PASS  (b') pinch: left/right MI suppressed toward the cut limit  0.000 vs uniform 2.325, cut 0.612
+   FAIL  (c) pinch: more edge modes than uniform               14 vs 14 (cut: 14)
+------------------------------------------------------------------------
+Overall: FAIL

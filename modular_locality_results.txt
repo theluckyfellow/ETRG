@@ -1,0 +1,55 @@
+==============================================================================
+MODULAR LOCALITY CHECK -- round 7, ETRG-3 selection principle
+==============================================================================
+Chain L = 80, half filling N = 40, region size |A| = 40
+
+TEST 1: kernel locality in the lattice metric (critical vacuum)
+------------------------------------------------------------------------------
+        region   mean range    r_99   r_99.9  nn fraction
+------------------------------------------------------------------------------
+    contiguous        1.140     3.0      7.0        0.943
+      even/odd       12.739    58.0     72.0        0.000
+  two-interval        1.087     3.0     39.0        0.988
+     random #1        4.461    49.0     51.0        0.809
+     random #2        1.922    23.0     51.0        0.863
+     random #3        1.763    17.0     49.0        0.876
+------------------------------------------------------------------------------
+(r_99 / r_99.9: distance containing 99% / 99.9% of off-diagonal weight)
+
+TEST 2: bootstrap form -- locality in the state's own MI metric
+------------------------------------------------------------------------------
+        region    MI r_99  random kernel  alignment
+------------------------------------------------------------------------------
+    contiguous      3.063         27.631       9.02
+      even/odd     27.631         27.631       1.00
+  two-interval      2.772         27.631       9.97
+     random #1     14.215         27.631       1.94
+     random #2      7.508         27.631       3.68
+     random #3      6.076         27.631       4.55
+------------------------------------------------------------------------------
+(alignment = MI r_99 of a randomly rotated same-spectrum kernel / K's)
+
+TEST 3: dimerized (gapped) chain, delta = 0.3 -- selection must survive
+------------------------------------------------------------------------------
+    contiguous  r_99 =    3.0   nn fraction = 0.948
+      even/odd  r_99 =   66.0   nn fraction = 0.000
+     random #1  r_99 =    7.0   nn fraction = 0.884
+------------------------------------------------------------------------------
+
+TEST 4: Haar-random Gaussian state, contiguous region (teeth check)
+------------------------------------------------------------------------------
+r_99 (lattice)  =     38.0   (vacuum contiguous: 3.0)
+nn fraction     =    0.042   (vacuum contiguous: 0.943)
+------------------------------------------------------------------------------
+
+PASS / FAIL table:
+----------------------------------------------------------------------
+   PASS  class selection: geometric vs scrambled, r_99 separation > 3x  5.7x
+   PASS  [RETRACTED AT SCALE] tail hierarchy at L=80 only (see fss_locality.py)  contiguous 7 vs two-interval 39
+   PASS  contiguous kernel nn-dominated (nn fraction > 0.5)  0.943
+   PASS  MI-metric alignment: geometric class > 1.5x scrambled  9.02 vs 4.55
+   PASS  even/odd kernel unaligned with MI geometry (alignment ~ 1)  1.00
+   PASS  gapped control: contiguous still selected         3.0 vs 66.0
+   PASS  teeth: Haar state is NOT local (nn fraction < 0.1)  0.042
+----------------------------------------------------------------------
+Overall: PASS

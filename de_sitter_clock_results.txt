@@ -1,0 +1,25 @@
+========================================================================
+DE SITTER CLOCK CHECK -- the comoving-observer computation
+========================================================================
+
+P1: comoving momentum bipartition: S_A = 2.86e-09, max inter-mode MI = 0.00e+00  (bar < 1e-9)
+
+P2: static-patch kernel profile: r_sine = 0.9115 (bar > 0.85), r_parabola = 0.9312 (must lose)
+
+P3: spatial interval (half-circle) kernel r_99 = 7.0 (bar <= 5)
+
+P4: Haar control: r_sine = -0.0145  (bar < 0.5)
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   PASS  P1: momentum bipartition degenerate (no Fourier-mode clock)  S_A 2.9e-09, max MI 0.0e+00
+   FAIL  P2: static-patch kernel = circle-diamond sine form    0.911 vs parabola 0.931
+   FAIL  P3: spatial interval modular-local (r_99 <= 5)        7.0
+   PASS  P4: Haar control has no sine profile                  -0.015
+------------------------------------------------------------------------
+Overall: FAIL
+
+If P1-P3 pass: GLM's necessity-not-sufficiency verdict is confirmed
+at toy level -- the horizon selects the static patch's diamond clock,
+not the comoving modes; the comoving observer's only entropic clock
+is position-space.

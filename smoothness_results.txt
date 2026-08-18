@@ -1,0 +1,48 @@
+==============================================================================
+SMOOTHNESS RESCUE CHECK -- pre-registered metrics and predictions
+==============================================================================
+
+    L        region   coverage    s_beta
+------------------------------------------------------------------------------
+   40    contiguous      1.000    0.8111
+   40  two-interval      1.000    0.5977
+   40      even/odd      0.000       nan
+   40     random #1      0.909    0.6872
+   40     random #2      0.909    0.6463
+   40     random #3      1.000    0.5111
+------------------------------------------------------------------------------
+   80    contiguous      1.000    0.8010
+   80  two-interval      1.000    0.8425
+   80      even/odd      0.000       nan
+   80     random #1      1.000    0.7819
+   80     random #2      1.000    0.7797
+   80     random #3      1.000    0.8026
+------------------------------------------------------------------------------
+  160    contiguous      1.000    0.8449
+  160  two-interval      1.000    0.9522
+  160      even/odd      0.000       nan
+  160     random #1      1.000    0.6752
+  160     random #2      0.895    0.9064
+  160     random #3      0.939    0.7139
+------------------------------------------------------------------------------
+  320    contiguous      1.000    0.7696
+  320  two-interval      1.000    0.7977
+  320      even/odd      0.000       nan
+  320     random #1      0.859    0.7639
+  320     random #2      1.000    0.7330
+  320     random #3      0.901    0.5346
+------------------------------------------------------------------------------
+Haar control (L=80, contiguous): coverage = 0.795, s_beta = 0.7621
+
+Adjudication vs pre-registered predictions (recoded, referee-tightened):
+------------------------------------------------------------------------------
+   FAIL  P1: contiguous s_beta SMALL (< 0.2) and decreasing (slope < -0.1)  s_beta 0.8111 -> 0.7696, slope -0.02 -- neither small nor decreasing
+   FAIL  P2: random coverage ~ 0.25 (< 0.5) AND s_beta > 2x contiguous   coverage 0.95 (prediction failed outright), s_beta ratio 0.90
+   FAIL  P3: Haar control jagged (s_beta > 3x contiguous at L=80)        0.7621 vs 0.8010
+
+P4 (flagged risk, reported not judged): two-interval s_beta 0.5977 -> 0.7977  vs contiguous 0.8111 -> 0.7696
+------------------------------------------------------------------------------
+Overall: FAIL
+
+The true score is FAIL/FAIL/FAIL: the metric is dead as pre-registered,
+and the adjudication now says so.

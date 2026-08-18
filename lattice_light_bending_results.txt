@@ -1,0 +1,34 @@
+==============================================================================
+LATTICE LIGHT BENDING -- the T3 two-face mechanism test
+==============================================================================
+
+calibration at v=0.2c: lapse-only theta = +0.00096, cone-only theta = +0.00096
+matched lapse strength: +0.29849 (raw +0.30000)
+
+  lapse  v=0.20c  theta = +0.000961  theta*v^2 = +0.000038
+  lapse  v=0.40c  theta = -0.000026  theta*v^2 = -0.000004
+  lapse  v=0.60c  theta = +0.000012  theta*v^2 = +0.000004
+  lapse  v=0.80c  theta = +0.000002  theta*v^2 = +0.000001
+  lapse  v=0.95c  theta = -0.001713  theta*v^2 = -0.001546
+
+   cone  v=0.20c  theta = +0.000956  theta*v^2 = +0.000038
+   cone  v=0.40c  theta = -0.000025  theta*v^2 = -0.000004
+   cone  v=0.60c  theta = +0.000012  theta*v^2 = +0.000004
+   cone  v=0.80c  theta = -0.000012  theta*v^2 = -0.000008
+   cone  v=0.95c  theta = -0.002117  theta*v^2 = -0.001911
+
+ metric  v=0.20c  theta = +0.000258  theta*v^2 = +0.000010
+ metric  v=0.40c  theta = -0.000128  theta*v^2 = -0.000020
+ metric  v=0.60c  theta = +0.000011  theta*v^2 = +0.000004
+ metric  v=0.80c  theta = +0.000003  theta*v^2 = +0.000002
+ metric  v=0.95c  theta = -0.001439  theta*v^2 = -0.001299
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   FAIL  P1: lapse-only theta*v^2 constant within 30% (alpha ~ 0)  spread 484%, alpha = -4.92
+   FAIL  P2: metric alpha = 1 +/- 0.3 (GR fingerprint)           alpha = -4.87
+   FAIL  P3: theta_metric/theta_lapse at 0.95c in [1.7, 2.3]     0.84
+
+P4 (reported): cone-only alpha = -4.87 (refraction-dominated expected)
+------------------------------------------------------------------------------
+Overall: FAIL

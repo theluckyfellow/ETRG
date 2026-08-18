@@ -1,0 +1,15 @@
+==============================================================================
+DIRAC-MALAMENT CHECK -- cones vs scale, null vs massive
+==============================================================================
+
+null probe:    theta(cone-def) = -5641632163928190976.000000   theta(mass-def) = -8584547964613477376.000000   theta(flipped) = +4011506859183392686080.000000
+massive probe: theta(cone-def) = +31056080977943.472656   theta(mass-def) = +28652446221849.109375
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   FAIL  B1 (FIRST BAR): null blind to pure-scale deformation  |-8.58e+18| < 0.15*|-5.64e+18| = 8.46e+17
+   FAIL  B2: massive probe reads the scale (> 3x null)         2.87e+13 vs 8.58e+18
+   PASS  B4: flipped deformation flips the sign                -5.64e+18 vs +4.01e+21
+   FAIL  B3: not scored (B1 failed)                            blocked
+------------------------------------------------------------------------------
+Overall: FAIL

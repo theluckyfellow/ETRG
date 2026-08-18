@@ -1,0 +1,29 @@
+===========================================================================
+Q10-over-the-class: dephasing lemma on a TWO-INTERVAL region
+===========================================================================
+Chain L = 200, filling N = 80
+Region A: sites 60..79 UNION 120..139 (size 40, non-contiguous)
+Perturbation: Gaussian onsite potential centered at i0=60, w=5.0
+
+Baseline entropies at eps=0:
+  S_A(0)    = 3.3342092598
+  S_mod(0)  = 3.3342092598
+  S_site(0) = 26.9280895551
+
+Smallest-eps data point:
+  eps            = 1.000e-06
+  pairing/dS_A   = 0.999899  (predicted 1.0)
+  ratio_mod      = 0.999905  (predicted 1.0)
+  ratio_site     = 5.085055  (predicted != 1.0)
+  residual slope = 2.0002  (predicted 2.0)
+
+(Contiguous control, q10_lattice_check.py: ratio_mod 0.99992, ratio_site 4.216, slope 2.000)
+
+PASS / FAIL table:
+------------------------------------------------------------
+   PASS  first law: pairing/dS_A -> 1                          0.99990
+   PASS  coarse-modular ratio -> 1 (lemma extends over the class)  0.99991
+   PASS  coarse-site ratio != 1 (site basis still fails)       5.08505
+   PASS  |S_mod - S_A| slope -> 2                              2.0002
+------------------------------------------------------------
+Overall: PASS

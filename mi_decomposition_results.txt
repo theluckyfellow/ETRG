@@ -1,0 +1,21 @@
+==============================================================================
+MI DECOMPOSITION CHECK -- cone part vs scale part of the MI geometry
+==============================================================================
+
+debt match: cone debt = +1.18460 (eps=0.3), scale debt = +1.18460 (eps'=0.1239)
+
+D1: corr(Delta d_MI[cone], Delta d_cone)  = -0.2615  (bar > 0.8)
+D2: corr(Delta d_MI[scale], Delta d_cone) = -0.0778  (bar < 0.5)
+
+D3: corr(measured front arrivals, cone prediction) = 0.9995 (bar > 0.9)
+
+D4: flipped cone deformation anti-correlates (r = -0.996, bar < -0.5)
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   FAIL  D1: cone response is cone-shaped (r > 0.8)            -0.262
+   PASS  D2: scale response is NOT cone-shaped (r < 0.5)       -0.078
+   PASS  D3: quench front tracks the hopping cone (r > 0.9)    0.999
+   PASS  D4: flipped deformation flips the response            
+------------------------------------------------------------------------------
+Overall: FAIL

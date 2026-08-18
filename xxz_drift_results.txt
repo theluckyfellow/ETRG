@@ -1,0 +1,33 @@
+========================================================================
+INTERACTING DRIFT CHECK -- does [K_A, H] discriminate under interactions?
+========================================================================
+
+Delta = 1.0 (critical), ground energy -6.026725
+------------------------------------------------------------------------
+      contiguous  eta = 0.00127
+        even/odd  eta = 0.00317
+    two-interval  eta = 0.00234
+       random #1  eta = 0.00364
+       random #2  eta = 0.00545
+------------------------------------------------------------------------
+
+Delta = 2.0 (gapped), ground energy -8.283217
+------------------------------------------------------------------------
+      contiguous  eta = 0.00113
+        even/odd  eta = 0.00297
+    two-interval  eta = 0.00213
+       random #1  eta = 0.00337
+       random #2  eta = 0.00538
+------------------------------------------------------------------------
+
+Haar control (sector, contiguous, D=1): eta = 0.00630 (vacuum: 0.00127)
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   FAIL  P1: D=1.0 contiguous beats every rival by > 2x        separation 1.9x
+   FAIL  P2: D=2.0 contiguous beats every rival by > 2x        separation 1.9x
+   PASS  P3: Haar control NOT drift-free (> 3x vacuum)         0.00630 vs 0.00127
+
+P4 (reported, not judged): two-interval eta D=1: 0.00234, D=2: 0.00213 vs contiguous 0.00127, 0.00113
+------------------------------------------------------------------------
+Overall: FAIL

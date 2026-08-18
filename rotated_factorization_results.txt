@@ -1,0 +1,23 @@
+==============================================================================
+ROTATED FACTORIZATION CHECK -- first factorization-level test
+==============================================================================
+
+ factorization     max MI   geometry   alignment
+------------------------------------------------------------------------------
+        F_site     0.8513     0.8305        7.06
+       F_block     0.6154     0.6379        3.43
+        F_rand     0.2091     0.2175        1.52
+         F_mom     0.0000     0.0000     degen.
+------------------------------------------------------------------------------
+
+Haar state: F_site alignment = 2.40, F_rand alignment = 2.50
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   FAIL  P1: F_site wins MI geometry by > 1.5x; F_mom degenerate     site 0.831 vs best rival 0.638; mom max MI 0.0e+00
+   PASS  P2: F_site wins bootstrap locality by > 1.5x                site 7.06 vs best rival 3.43
+   PASS  P3: Haar alignment far below vacuum (ratio > 2x)            vacuum 7.06 vs Haar 2.50
+
+P4 (reported, not judged): F_block geometry 0.638, alignment 3.43
+------------------------------------------------------------------------------
+Overall: FAIL

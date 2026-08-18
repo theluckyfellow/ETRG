@@ -55,7 +55,7 @@ Substituting T_H = ħκ/2πk_B:
 
 Equivalently, in fully dimensionless form: **a sonic horizon writes one-twelfth of a nat of entanglement per boost e-fold per channel.** This is the number all three legs must share. For the baseline apparatus: κ/12 = **24 nats/s = 2.4 nats per 100 ms window** [derived].
 
-The law is standard two-mode-squeezing QFT **[import]** — it is not an ETRG novelty, and the program's claims do not rest on the coefficient (see §1.4 and §6). Two real-geometry corrections multiply it:
+The law is standard two-mode-squeezing QFT **[import]** — it is not an ETRG novelty, and the program's claims do not rest on the coefficient (see §1.4 and §6). In the acoustic setting specifically it is **Giovanazzi's κ/12 proposal (PRL 106, 011302, 2011)**, which also proposed the number-fluctuation measurement channel that leg (ii) machinery uses — so leg (ii)'s observable class has 2011 prior art, and this protocol's novelty is the *lock* (third leg, residual, ordering), not the flux measurement (prior-art audit, ETRG_prior_art_audit.md). Two real-geometry corrections multiply it:
 
 - **f — the infrared window factor.** s(x) diverges logarithmically as x → 0; the finite system cuts the integral at x_min = πħc/(L k_B T_H) ≈ 0.4 for the baseline geometry (both sides give x_min ≈ 0.34–0.39). Sharp-cutoff estimate: f = 1 − (2x_min + x_min ln(1/x_min))/(π²/3) ≈ **0.65 ± 0.10** **[derived, sharp-cutoff approximation; the ±0.10 is the honesty band for the soft-window correction]**. Longer condensates push f toward 1.
 - **g — the greybody/Bogoliubov transmission factor**, the band-averaged mode-conversion efficiency of the actual flow profile. Literature analogy for waterfall profiles suggests g ≈ **0.9 ± 0.1** **[estimate — NOT derived here; requires a numerical Bogoliubov solve of the measured profile, §6]**.
@@ -222,3 +222,80 @@ The combined one-rate χ² (2 dof, reject above 11.8) summarizes 1–4; rows 3 a
 5. **Numbers replace targets.** "~20% consistency test" becomes: factor-2.0–2.6 pairwise mismatch sensitivity at 3σ, a 3σ weld detection, and a 5.5σ ordering separation, at a stated campaign size (~2.7×10⁴ runs, ~3.5× the 2019 ensemble).
 
 *Provenance: κ/12 law, window factor f, all signal sizes, precision budgets, and the residual structure derived in this document from the flagged inputs; two-mode-squeezing thermality and the Gaussian entropy machinery are imports; the weld's discrimination hierarchy (§4.11, K7) incorporates the round-7/8 lattice lessons (region-agnostic passes are empty; geometric-vs-scrambled drift is the discriminating form). Numerical cross-checks of the arithmetic in this document would be a natural next lattice task but do not exist yet — the derivations above are closed-form and checkable by hand.*
+
+---
+
+## 9. The fourth leg: the Page series — Fable addendum
+
+*Added August 2026 (Fable), at the originator's direction, extending ETRG-6 §2 (the information-paradox entry) into this protocol: the entanglement-entropy TIME SERIES across the horizon. Same house rules and flags as §§0–8. The section corrects one piece of ETRG-6 §2's optimism on the way in (§9.1); scope is stated in §9.6.*
+
+### 9.1 The correction first: a sustained horizon has no Page turnover
+
+ETRG-6 §2 calls the Page curve "in principle measurable in an analogue horizon." The two-face bookkeeping itself says: **not in the standard configuration.** The Page decline requires the reservoir's coarse book to shrink — in gravity, evaporation shrinks the hole. The analogue horizon is externally sustained: the flow profile is imposed by the trap, nothing back-reacts, and the interior's book only grows. Over the 100 ms window the accumulated flux (≈1.4 nats) sits an order of magnitude below the interior's standing book (≈22 k_B, slack ×15): the capacity bound never binds. **For the sustained horizon the two-face prediction is monotonic linear growth with no turnover — the *absence* of a Page knee is the prediction, and a spontaneous turnover would be evidence against the bookkeeping, not for it** (row K9). A Page-shaped series must be engineered by squeezing the reservoir from outside (§9.3). This paragraph stands as a correction to ETRG-6 §2's flag.
+
+The structural statement, all configurations. Let Ŝ_fine(t) be the horizon-attributed entanglement across the cut (the κ̂₂ machinery, İ/2 per hold-time bin) and Ŝ_cg,int(t) the interior coarse book (the κ̂₃ machinery), both as excesses over matched no-horizon controls. The two-face claim, time-resolved:
+
+  **Ŝ_fine(t) = Ŝ_cg,int(t) at every t — Δ_weld(t) = 0 through growth, knee, and fall — with common shape min( ∫₀ᵗ f·g·κ dt′/12 , capacity(t) ).**
+
+The min-envelope is the two-face reading of the Page/island structure: the fine book tracks the lower of flux-accumulation and coarse capacity **[import at the level of form]**. The inequality S_vN ≤ S_obs is a theorem (observational entropy bounds von Neumann entropy from above), so the bound itself cannot fail; the falsifiable content is *saturation* — one book, not two, at a horizon — which is Q10's weld promoted from a rate identity to a trajectory identity **[derived at the idealized level; estimator caveats §9.5]**.
+
+### 9.2 P-stat — the growth phase (runs mostly on already-budgeted data)
+
+Predicted shape **[derived]**:
+
+- onset within 1/κ = 3.5 ms (K6's fine bins already watch this);
+- linear thereafter: slope f·g·κ/12 = 14 ± 3 k_B/s ≡ 0.049 nats per boost e-fold; 29 e-folds in the window → endpoint 1.4 nats;
+- curvature zero; no saturation and no decline anywhere in the window.
+
+Estimator and cost: the leg-(iii) hold scans already collect time-binned ensembles; Ŝ_fine(t) is a *new analysis* (the Gaussian triple per bin) of the same images, plus ~3×10³ extra runs to fill late-window bins **[estimate]**. Per-bin σ ≈ 0.3 k_B at 10³ runs/bin **[derived, ×2 correlated-noise inflation as in §2.3]**.
+
+Sensitivity **[derived]**: a mid-window stall shows as a late-bin deficit of 0.4–0.7 k_B per bin → ≈4σ combined over the last four bins. Honest limit: a smooth ≤20% bend is *not* resolvable at this budget. Super-linear late growth is the 2021-class inner-horizon stimulation — truncate the window, not a kill; note it has the wrong sign to fake a Page fall (stimulation raises occupations, a turnover lowers entanglement).
+
+### 9.3 P-off and P-ramp — the engineered knees
+
+**P-off (horizon shutoff — the cheap knee).** Ramp the step away at t_off ≈ 60 ms, leaving both regions intact. The flux stops; the pairs already created keep their entanglement — nothing returns the partners. Prediction: rise at 14 k_B/s → plateau at ≈0.84 k_B, knee sharp to ~1/κ = 3.5 ms; post-shutoff slope 0, with continued 14 k_B/s growth excluded at ~3σ from ~8×10³ runs **[derived from the §2.3 slope budget]**. This is itself an anti-naive prediction worth publishing: **even killing the horizon produces no Page decline in the analogue** — the decline needs the interior *region* dismantled, not the horizon. Post-shutoff continued rise at the flux rate: estimator artifact or thermalization contamination — suspend. Post-shutoff decline: entropy leaving without carriers — feeds K11.
+
+**P-ramp (reservoir squeeze — the full curve) [contingent].** Start with a short interior, L_int(0) ≈ 12 μm — standing book 3.6 k_B by discrete band sum (8 thermal-band modes at 0.8 nK; the continuum formula's 5.3 k_B overestimates at this length) **[derived]**. Hold 40 ms; then sweep the terminating wall to shrink L_int → 4 μm ≈ 2ξ over the final 60 ms. The mode ladder ω_k(t) = kπc_in/L_int(t) climbs out of the thermal band; the band count falls 8 → 2; the sharp-band capacity template S_cap(t) = Σ_k s(n(x_k(t))) collapses 3.6 → ≈0.7 k_B **[derived as template; [estimate] beyond the sharp band]**.
+
+What the mode dynamics does with the squeezed entropy is **not derived here** — three outcomes, all covered:
+
+1. **Expulsion across the cut** (non-adiabatic conversion at the shrinking end): the Page fall proper. Total interior book falls ~3 k_B over the final ~30 ms (≈100 k_B/s, ~7× the growth slope — a 10σ cumulative feature at per-bin σ 0.3–0.4 k_B); the horizon-attributed *excess* falls ~0.5–1 k_B (≈3σ at 10³ runs/bin; ≈5σ with post-knee bins at 3×10³) **[derived from template + budgets]**. Carrier accounting is the signature: the fall must reappear as a late pulse in exterior-band occupations, arriving over the c_out-crossing time 10–30 ms — ETRG-6 §2's "reconciling, not escaping" made watchable.
+2. **Adiabatic heating** (per-mode entropy conserved as ω rises): no fall, books rise together, the squeeze failed to squeeze — configuration failure, suspend not kill.
+3. **Conversion to non-phonon interior carriers**: the tracked books fall while total entanglement hides in the particle sector — the main interpretive risk (K12), checked by interior time-of-flight spectra **[open]**.
+
+The two-face content is outcome-independent: **whichever branch runs, the two books must track each other through it.** Δ_weld(t) = 0 is the prediction in all three branches, and it is template-free, f·g-free, and piston-free (both books see the same injections).
+
+Wall-speed constraint **[honest]**: sweeping 8 μm in 60 ms is 0.13 mm/s ≈ 0.5 c_in — the wall is a Mach-0.5 piston injecting its own excitations. Control C-ramp-0 (same sweep, no horizon) measures the piston book and is subtracted; Δ_weld(t) is immune (common-mode), but the Page *shape* rides on the subtraction. If piston injection ≳ signal, the configuration fails — suspend. A 200 ms stationarity window would halve the wall Mach **[contingent on apparatus]**. Dial: a steeper profile (T_H → 0.7 nK) doubles the flux and the excess-curve amplitude **[estimate]**.
+
+**Precision summary [derived unless flagged]:**
+
+| Series feature | Prediction | Achievable (est.) | Runs |
+|---|---|---|---|
+| P-stat slope | 14 ± 3 k_B/s, linear | σ ≈ 4–5 k_B/s; stall ≈ 4σ; 20% bend unresolved | shared + 3×10³ |
+| P-off knee | plateau 0.84 k_B at t_off, knee ≤ 3.5 ms | continued rise excluded ~3σ | 8×10³ |
+| P-ramp fall, total book | ~3 k_B over final 30 ms | ~10σ cumulative | 2×10⁴ incl. control |
+| P-ramp fall, excess book | 0.5–1 k_B | ~3σ (5σ with post-knee bins) | — same data |
+| Book synchrony Δ_weld(t) | 0 throughout | 3σ per bin at 1.3 k_B split; lag ≥ 2 bins (~15 ms) resolvable | same data |
+
+### 9.4 Kill rows (extending the §5 table)
+
+| # | Measured outcome | Verdict | What dies |
+|---|---|---|---|
+| K9 | P-stat: Ŝ_fine saturates or declines at ≥3σ while κ̂₁, κ̂₂ hold steady | **KILL** | The weld as a *dynamical* identity — books that agree on rates but not on integrals are two books. |
+| K10 | Any configuration: the books de-synchronize through a knee — Δ_weld(t) = 0 before, \|Ŝ_fine − Ŝ_cg,int\| ≥ 1.3 k_B (3σ) at/after, or a sustained lag ≥ ~15 ms between the books' falls | **KILL** | The two-face identity exactly where ETRG-6 §2 spends it: if the faces separate at the turnover, "the Page curve is the two books reconciling" is false *as structure*, whatever gravity does. |
+| K11 | The books fall with no matching carrier flux into the exterior band (and no K12 particle sector found) | **KILL** | The bookkeeping identity — entropy cannot leave the ledger without carriers. |
+| K12 | Interior TOF shows the squeezed entropy parked in non-phonon carriers | **Confound, not kill** | The phonon-sector books reconcile while total entanglement hides; the Page claim is untested until the particle sector is included in both books. |
+
+### 9.5 Estimator honesty
+
+- İ/2 = entanglement flux is exact for pure pairs; thermal seeding (T_bg > T_H) makes the series a corrected estimate — the §4.6 per-mode correction applies per bin; residual 10–15% **[estimate]**, largely common-mode between the books (partial cancellation in Δ_weld(t)).
+- During the ramp the analysis basis must follow the instantaneous mode ladder computed from the measured L_int(t) — the same contingency class as the leg-(ii) pipeline, now time-dependent.
+- The capacity template is sharp-band and serves *timing prediction only* — every kill row above is template-free.
+
+### 9.6 Budget and scope
+
+Addition to the campaign: P-stat ≈ 3×10³ (mostly reanalysis), P-off ≈ 8×10³, P-ramp ≈ 2×10⁴ with control → campaign total ~5–6×10⁴ runs ≈ **7–8× the 2019 ensemble**; wall-clock roughly 3 months at the §2.4 duty-cycle assumption **[estimate]**. The ladder is deliberately graded: P-stat is demonstrated-class analysis of budgeted data, P-off adds one ramp on demonstrated controls, P-ramp is [contingent] and is the only rung that shows a fall.
+
+Scope, stated plainly: this leg tests none of the gravitational machinery — no islands, no replica wormholes, no back-reaction (the flow is imposed, not sourced by the phonons). What it tests is the claim ETRG-6 §2 actually makes: that a horizon keeps **one book read two ways**, through a full rise-and-fall cycle, with reconciliation by physical carrier flow. K10 is that claim's laboratory exposure — and if the two books separate at the knee, no appeal to "it's only an analogue" survives, because the claim was about bookkeeping, not about gravity.
+
+*Provenance: shapes, templates, and budgets derived here from §0–§2 inputs; the min-envelope is imported at the level of form from the Page/island literature; mode conversion at the moving wall, the piston spectrum, and the seeding-corrected estimator at few-k_B amplitudes are this section's [open] items.*

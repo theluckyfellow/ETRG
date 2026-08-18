@@ -1,0 +1,29 @@
+========================================================================
+PESCHEL/CFT PROFILE CHECK -- is the interval kernel the boost generator?
+========================================================================
+
+vacuum, interval L/2 (sites 100..299):  Pearson r = 0.4982   (predicted > 0.9)
+vacuum, interval L/4 (sites 150..249):  Pearson r = 0.6649   (predicted > 0.9)
+Haar state, interval L/2:                      Pearson r = -0.0131   (predicted < 0.5)
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   FAIL  P1: vacuum L/2 interval, r > 0.9              0.4982
+   FAIL  P2: vacuum L/4 interval, r > 0.9              0.6649
+   PASS  P3: Haar control, r < 0.5                     -0.0131
+------------------------------------------------------------------------
+Overall: FAIL
+
+EXPLORATORY diagnostics (not pre-registered, no PASS/FAIL):
+------------------------------------------------------------------------
+    L   ell  J(1)/pi    J_mid  r_para r_para full-range
+  400   200    1.000   17.646  0.4982            0.8996
+  800   100    0.991   17.531  0.6669            0.9168
+  800   200    0.996   17.604  0.5033            0.8938
+ 1600   400    0.998   17.603  0.3706            0.8830
+------------------------------------------------------------------------
+Round-8 nomination: pre-register the check against the EXACT lattice
+form (Eisler-Peschel, elliptic-function kernel) or the entanglement-
+spectrum spacing Delta_eps = pi^2/ln(ell) -- not the naive continuum
+parabola on the nn channel.  The edge slope J(1) = pi is a candidate
+sharp anchor, pending the same pre-registration discipline.

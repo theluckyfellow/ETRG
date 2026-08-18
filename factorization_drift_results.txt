@@ -1,0 +1,18 @@
+========================================================================
+DRIFT ACROSS FACTORIZATIONS -- does [K, h0] rank F_site first?
+========================================================================
+
+          F_site  eta = 0.00820
+   near-local #0  eta = 0.00970
+   near-local #1  eta = 0.00891
+   near-local #2  eta = 0.00792
+          F_rand  eta = 0.07776
+
+Haar state, F_site: eta = 0.17836 (vacuum F_site: 0.00820)
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   FAIL  P1: eta(F_site) smallest by > 1.5x            site 0.00820 vs best rival 0.00792 (1.0x)
+   PASS  P2: Haar control NOT drift-free (> 3x vacuum)  0.17836 vs 0.00820
+------------------------------------------------------------------------
+Overall: FAIL

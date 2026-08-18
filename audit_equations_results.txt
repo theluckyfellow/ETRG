@@ -1,0 +1,41 @@
+========================================================================
+AUDIT: the program's named equations, re-derived
+========================================================================
+
+1. delta_lock factor-of-2 derivation
+------------------------------------------------------------------------
+  Delta<K>/S_BH (derived) = 2*DeltaE*G/(R*c**4*k_B)
+  claimed bound           = 2*DeltaE*G/(R*c**4*k_B)
+  difference              = 0
+  factor of 2 = pi-cancellation of boost generator vs area law: CONFIRMED
+
+2. Deflection factor (1 + v^2/c^2)
+------------------------------------------------------------------------
+  v -> 0:  1   (Newtonian / slow matter reads one face)
+  v -> c:  2   (light reads both faces: the measured 2:1)
+  limits: CONFIRMED
+
+3. Dimensional audit (SI base dimensions)
+------------------------------------------------------------------------
+  ok   G*DeltaE/(c^4 R) dimensionless                 (0, 0, 0, 0)
+  ok   T*deltaS/c^2 has units of mass                 (0, 1, 0, 0)
+  ok   3 pi k_B c^3/(Lambda G hbar) has entropy units (J/K)  (2, 1, -2, -1)
+  ok   k_B T/hbar has units of rate (1/time)          (0, 0, -1, 0)
+
+4. S_Lambda = 3 pi/(Lambda G) from the area law
+------------------------------------------------------------------------
+  R_dS = sqrt(3/Lambda)  ->  A = 12*pi/Lambda
+  S = A/4G = 3*pi/(G*Lambda)   (claimed 3*pi/(Lambda*G))
+  CONFIRMED
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   PASS  delta_lock factor of 2 derived
+   PASS  deflection limits 1 and 2
+   PASS  G*DeltaE/(c^4 R) dimensionless
+   PASS  T*deltaS/c^2 has units of mass
+   PASS  3 pi k_B c^3/(Lambda G hbar) has entropy units (J/K)
+   PASS  k_B T/hbar has units of rate (1/time)
+   PASS  de Sitter budget from area law
+------------------------------------------------------------------------
+Overall: PASS

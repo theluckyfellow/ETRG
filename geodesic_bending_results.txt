@@ -1,0 +1,26 @@
+========================================================================
+GEODESIC BENDING CHECK -- the clean (1 + v^2/c^2) profile
+========================================================================
+
+null deflection (metric):        -0.028570
+v = 0.30c: theta = -0.210409   null/theta(v) = 0.136   A5 pred 0.165
+v = 0.50c: theta = -0.075306   null/theta(v) = 0.379   A5 pred 0.400
+v = 0.77c: theta = -0.038851   null/theta(v) = 0.735   A5 pred 0.744
+v = 0.90c: theta = -0.032056   null/theta(v) = 0.891   A5 pred 0.895
+
+G2 supplementary (slow ray, perturbative regime; committed):
+  EPS=0.05: ratio 0.1358   (A5 pred 0.165)
+  EPS=0.02: ratio 0.1544   (A5 pred 0.165)
+  EPS=0.01: ratio 0.1599   (A5 pred 0.165)
+
+Malament: theta(cone) = -0.014041, theta(scale) = -0.000000
+sign control: theta(flip) = +0.026597
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   PASS  G1: ratios match A5's 2v^2/(v^2+c^2) within 15% (v=0.5,0.77,0.9)  0.38/0.40; 0.74/0.74; 0.89/0.90
+   PASS  G2: slow-ray ratio converges to A5 in the linear regime (EPS->0)  0.160 vs 0.165 at EPS=0.01 (0.136 at EPS=0.05, nonlinear)
+   PASS  G3 (Malament): scale deformation bends null < 5% of cone  2.48e-19 vs 1.40e-02
+   PASS  G4: flipped potential flips the sign                    -2.86e-02 vs +2.66e-02
+------------------------------------------------------------------------
+Overall: PASS

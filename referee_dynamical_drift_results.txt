@@ -1,0 +1,36 @@
+==============================================================================
+REFEREE CHECK: direct dynamical drift, no clock ambiguity
+shared central bump; footprint-matched rivals
+==============================================================================
+     T         region       m(T)   ||dC_A||     ratio
+------------------------------------------------------------------------------
+   5.0     contiguous    0.50310    0.11661   4.31445
+   5.0     alt-window    0.28355    0.06251   4.53618
+   5.0   rand-window1    1.37064    0.06999  19.58252
+   5.0   rand-window2    1.36405    0.07027  19.41161
+   5.0   two-interval    0.67584    0.00000  76685553469159.93750
+   5.0    rand-global    0.81786    0.03602  22.70737
+   5.0       even/odd    0.19738    0.00000  1450786.30451
+------------------------------------------------------------------------------
+  20.0     contiguous    0.58368    0.19565   2.98332
+  20.0     alt-window    0.69762    0.13145   5.30714
+  20.0   rand-window1    1.37602    0.13692  10.04957
+  20.0   rand-window2    1.29739    0.13245   9.79559
+  20.0   two-interval    0.49784    0.00000  11031656.85377
+  20.0    rand-global    0.77334    0.06467  11.95910
+  20.0       even/odd    0.48569    0.01246  38.97557
+------------------------------------------------------------------------------
+  80.0     contiguous    0.17883    0.18342   0.97501
+  80.0     alt-window    0.95242    0.11097   8.58254
+  80.0   rand-window1    0.86416    0.11897   7.26366
+  80.0   rand-window2    0.75250    0.11709   6.42666
+  80.0   two-interval    0.10860    0.04631   2.34502
+  80.0    rand-global    0.78108    0.08069   9.68019
+  80.0       even/odd    1.02493    0.08757  11.70366
+------------------------------------------------------------------------------
+
+Adjudication of referee prediction R1 (footprint-matched rivals,
+ratio = drift per unit dynamics; contiguous must be smallest):
+  T=  5.0  contiguous 4.31445 vs best footprint rival 4.53618  (1.05x)  PASS
+  T= 20.0  contiguous 2.98332 vs best footprint rival 5.30714  (1.78x)  PASS
+  T= 80.0  contiguous 0.97501 vs best footprint rival 6.42666  (6.59x)  PASS

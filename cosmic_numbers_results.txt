@@ -1,0 +1,50 @@
+========================================================================
+COSMIC NUMBERS CHECK -- the consistency layer
+========================================================================
+
+inputs: H0 = 2.184e-18 1/s (67.4 km/s/Mpc), Omega_L = 0.685, Lambda = 1.091e-52 1/m^2
+
+R1: the acceleration scales
+  R_dS            = 1.658e+26 m  (5.37 Gly)
+  kappa_dS = c^2/R_dS = 5.420e-10 m/s^2
+  c H_inf         = 5.420e-10 m/s^2
+  Unruh accel of T_GH = 5.420e-10 m/s^2 (identical to kappa_dS
+      by construction -- the 2pi is the Unruh convention)
+  MOND a_0 (measured) = 1.200e-10 m/s^2
+  ratio kappa_dS / a_0 = 4.52
+  note: a_0 vs c H_0 / (2 pi) = 1.042e-10, ratio 1.15
+
+R2: the entropy budget
+  S_Lambda = 3.307e+122 nats
+  (t_H/t_P)^2 = 7.211e+121
+  ratio = 4.586  (= pi/Omega_L = 4.586 identically: S_Lambda = (pi/Omega_L)(t_H/t_P)^2)
+
+R3: the candidate lock's rate identity
+  T_GH = 2.198e-30 K
+  modular rate 2 pi k_B T_GH / hbar = 1.808e-18 1/s
+  H_inf = 1.808e-18 1/s
+  ratio = 1.0000 (predicted 1.0 by construction:
+  this is the DEFINITION of T_GH -- the content is that the
+  cosmic entropic clock, if it exists, runs at the Hubble rate)
+
+The budget vs the age:
+  S_Lambda = 3.31e+122 nats;  universe age ~ 1.0 Hubble times
+  at one nat per Hubble time, the budget lasts 3.31e+122 Hubble times
+  -- the observed smallness of Lambda = the budget is enormous
+     (10^122), so the clock does not run out; the B7 reading is
+     that a LONG history REQUIRES the tiny Lambda, not that the
+     budget is nearly spent.
+
+CONSISTENCY SUMMARY (flags, not verdicts):
+------------------------------------------------------------------------
+  R1: the de Sitter surface gravity and the MOND scale agree to
+      a factor 4.5 (and a_0 vs cH_0/2pi: 1.15)
+      -- order-of-magnitude coincidence, coefficient UNDERIVED;
+      the convention freedom (1, 2pi, 1/2pi, sqrt(Omega_L)) spans
+      an order of magnitude and both ratios are of equal standing.
+      The program supplies the scale, NOT the dynamics.
+  R2: S_Lambda = (pi/Omega_L)(t_H/t_P)^2 -- an algebraic IDENTITY
+      of the definitions (exact for any parameter values);
+      definitional, like R3.  10^122 constrains nothing by itself.
+  R3: rate identity is definitional; the cosmological lock needs
+      a SECOND observable beyond H_inf to be a lock at all.

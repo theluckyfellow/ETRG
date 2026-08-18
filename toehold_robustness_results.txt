@@ -1,0 +1,16 @@
+==============================================================================
+TOEHOLD ROBUSTNESS CHECK -- L-scaling and state-independence
+==============================================================================
+
+P1a: L=40, critical: F_site 7.697 vs rivals ['3.521', '3.050', '3.016'] -> WIN
+P1b: L=120, critical: F_site 5.805 vs rivals ['3.282', '3.352', '3.368'] -> WIN
+P2: L=60, dimerized 0.3: F_site 5.733 vs rivals ['5.743', '5.533', '4.883'] -> LOSS
+P3: Haar state (L=60): alignment 2.54 (bar < 3)
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   PASS  P1: F_site wins at L=40 and L=120 (critical)          L40 WIN, L120 WIN
+   FAIL  P2: F_site wins for the gapped state (L=60)           LOSS
+   PASS  P3: Haar alignment < 3                                2.54
+------------------------------------------------------------------------------
+Overall: FAIL

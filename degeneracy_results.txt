@@ -1,0 +1,25 @@
+========================================================================
+DEGENERACY CHECK: the momentum-bipartition trivial maximizer
+========================================================================
+
+P1: momentum bipartition (40 lowest-energy modes)
+    S_A                       = 1.145e-09   (predicted ~ 0)
+    kernel off-diagonal |.|^2 = 1.484e-28   (predicted 0 -> r_99 = 0, naive locality WON trivially)
+
+P2: max single-mode mutual information I(k:k') = 0.000e+00   (predicted 0 -> MI metric degenerate, NO geometry)
+
+P3: amended P-select (nondegenerate-geometry clause):
+    momentum partition: max I = 0.00e+00  -> geometry DEGENERATE -> rejected before scoring
+    site partition:     max I = 0.851  -> geometry nondegenerate -> scorable
+
+PASS / FAIL table:
+------------------------------------------------------------------------
+   PASS  P1: mode bipartition pure (S_A < 1e-6) with diagonal kernel  S_A = 1.1e-09, off-diag = 1.5e-28
+   PASS  P2: mode MI metric degenerate (max I < 1e-9)                0.0e+00
+   PASS  P3: site MI metric nondegenerate (max I > 0.01)             0.8510
+------------------------------------------------------------------------
+Overall: PASS
+
+Verdict on referee section 2: the trivial maximizer EXISTS (P1), and
+the nondegenerate-geometry clause KILLS it (P2+P3).  The clause is
+therefore a required amendment to P-select, not an optional one.

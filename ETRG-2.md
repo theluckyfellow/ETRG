@@ -40,7 +40,7 @@ Explained structurally: the problem of time (dissolved at the matter level, alle
 1. **The off-equilibrium failure signature of the lock.** Push the FHHPRV second-order machinery to extract how the three-way lock fails for a defined non-equilibrium state class — this either upgrades the lock to an off-equilibrium theorem or produces the program's first genuinely novel falsifiable number. (Named independently by GLM, Kimi, and DeepSeek as the top target.)
 2. **The Type III / continuum restatement of Q10** — the selection theorem currently lives in lattice-regularized form; wedge algebras are Type III₁ and the dephasing lemma needs restating via conditional expectations or Connes cocycles.
 3. **The non-conformal diamond measure** (the one residual obstruction to off-equilibrium covariance, §Layer G).
-4. **A factorization selection principle** (§4) — or a proof that none is needed within the admissible class.
+4. **A factorization selection principle** (§4) — or a proof that none is needed within the admissible class. *Round-7 candidate: modular locality (P-select) — verified against maximal scrambling only; middle-ranking open; degeneracy amendment (nondegenerate-geometry clause) adopted after referee review; region-selection vs factorization-selection distinction now named. See ETRG-3_modular_locality_note.md §11 and ETRG-3_referee_fable.md.*
 5. **The P2 protocol with numbers**: required precisions on T_H, S_ent, and lapse for a Steinhauer-class apparatus, at stated confidence.
 6. **The σ calibration**: derive σ(ħ, k_B, T) to make entropic time parameter-free.
 7. **Finite-size scaling of the entire lattice suite** (Kimi's audit: turn existence proofs into evidence).

@@ -1,0 +1,11 @@
+==============================================================================
+REFEREE CHECK: clip sensitivity of the drift commutator eta
+==============================================================================
+clip = 1e-06:  separations ['2.7', '4.5', '6.5', '9.3']  slope 0.59
+    clipped eigenvalues at L=320 (of 160): {'contiguous': 144, 'even/odd': 0, 'random #1': 24, 'random #2': 18, 'random #3': 16}
+clip = 1e-09:  separations ['2.8', '4.9', '7.3', '10.3']  slope 0.62
+    clipped eigenvalues at L=320 (of 160): {'contiguous': 138, 'even/odd': 0, 'random #1': 20, 'random #2': 8, 'random #3': 14}
+clip = 1e-12:  separations ['2.9', '5.4', '7.8', '11.4']  slope 0.64
+    clipped eigenvalues at L=320 (of 160): {'contiguous': 132, 'even/odd': 0, 'random #1': 16, 'random #2': 4, 'random #3': 14}
+------------------------------------------------------------------------------
+If separations/slope drift with clip, eta is regulator-dependent.

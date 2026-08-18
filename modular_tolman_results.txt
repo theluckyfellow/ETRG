@@ -1,0 +1,27 @@
+==============================================================================
+MODULAR TOLMAN CHECK -- does the kernel weight track 1/v_F?
+==============================================================================
+
+   slow region (v_F = 0.4986):  A_x = 0.056278,  r(x-parabola) = 0.9503,  r(sigma-parabola) = 0.9442
+ medium region (v_F = 0.9158):  A_x = 0.061310,  r(x-parabola) = 0.9542,  r(sigma-parabola) = 0.9553
+   fast region (v_F = 0.9457):  A_x = 0.062407,  r(x-parabola) = 0.9532,  r(sigma-parabola) = 0.9537
+
+uniform control amplitudes: ['0.059714', '0.060059', '0.061165']
+uniform spread: 2.4% (bar < 10%)
+
+Haar control: parabola r = 0.2411 (bar < 0.5)
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+   PASS  M1'': kernel profile parabolic everywhere (r > 0.9, full-range)  ['0.944', '0.955', '0.954']
+   PASS  M2'': amplitude universal within 15% (t cancels)      spread 10.2%
+   PASS  M3: uniform control spread < 10%                      2.4%
+   PASS  M4: Haar control, no parabola (r < 0.5)               0.241
+------------------------------------------------------------------------------
+Overall: PASS
+
+Note: sigma-parabola vs x-parabola are indistinguishable at this
+profile smoothness (both r ~ 0.95); the conformal-map distinction
+needs a steeper v_F gradient.  The slow-region amplitude deficit
+(10%) is the
+residual after the t-cancellation; universality holds to ~10%.

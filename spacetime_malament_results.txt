@@ -1,0 +1,17 @@
+==============================================================================
+SPACETIME MALAMENT CHECK -- cones vs scale, null vs massive
+==============================================================================
+
+null (m=0):   theta(cone) = -0.02883   theta(scale) = -0.00043   theta(flip) = +0.03631
+massive:      theta(cone) = +0.02795   theta(scale) = +0.03244
+
+PASS / FAIL table:
+------------------------------------------------------------------------------
+B3 (corrected): theta_metric(null) = -0.04319, theta_metric(massive v=0.77c) = +0.07383
+    ratio = 0.59, GR prediction = 1.26, bar [0.9, 1.6]
+   PASS  B1 (FIRST BAR): null rays blind to pure-scale deformation  |-4.29e-04| < 0.2*|-2.88e-02|
+   PASS  B2: massive probe reads the scale (> 2x null-scale)   3.24e-02 vs 4.29e-04
+   PASS  B4: flipped cone deformation flips the sign           -2.88e-02 vs +3.63e-02
+   FAIL  B3: null/massive ratio matches GR (1+v^2/c^2)         0.59 vs pred 1.26
+------------------------------------------------------------------------------
+Overall: FAIL
